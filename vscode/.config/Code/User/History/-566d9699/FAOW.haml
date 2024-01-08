@@ -1,0 +1,111 @@
+.title-container
+  .col-sm-8
+    %h1= t('.title')
+
+- filter_params = { filter: { from_date: parse_date(params, :from_date), to_date: parse_date(params, :to_date) } }
+
+= render partial: 'filter_form', locals: { args: { path: irs_billed_mx_companies_path, filter_by_type: true, download: true, report_path: email_billed_payments_report_mx_companies_path(filter_params), pdf_path: email_billed_payments_mx_companies_path(filter_params.merge(files_format: :pdf)), xml_path: email_billed_payments_mx_companies_path(filter_params.merge(files_format: :xml)), search_by_property: true } }
+
+= form_tag create_complement_mx_companies_path, id: 'payment_irs_form' do
+  %br
+  - display_tabs = irs_tabs_hash(active: :billed).map { |tab| { text: tab[:text], url: tab[:link], active: tab.dig(:options, :class) == 'active' } }
+  = render(DisplayTabsComponent.new(tabs: display_tabs)) do |tabs|
+    - tabs.with_buttons_section do
+      = button_tag type: 'submit', class: 'irs-all irs-complement btn btn-default btn-sm disabled', disabled: true do
+        %span.fa.fa-file-pdf-o
+        %span= t('views.mx_companies.navigation.generate_complement')
+  %table.table-root
+    %tr
+      %th
+      %th= t('activerecord.models.property.one')
+      %th= t('activerecord.attributes.finkok_response.receptor_name')
+      %th= t('activerecord.attributes.finkok_response.receptor_rfc')
+      %th= t('activerecord.attributes.payment.folio')
+      %th= t('activerecord.attributes.payment.price')
+      %th= t('activerecord.attributes.payment.paid_at')
+      %th= t('activerecord.attributes.finkok_response.payment_method')
+      %th= t('activerecord.attributes.payment.irs_status')
+      %th= t('activerecord.attributes.finkok_response.uuid')
+      %th= t('.xml')
+      %th= t('views.commons.actions')
+    - @payments.each do |payment|
+      :ruby
+        property = payment.property
+        missing_configurations = if property.present?
+                                  get_missing_configurations(property)
+                                 else
+                                  true
+                                 end
+        finkok_response = payment.finkok_response
+      %tr
+        %td{ rowspan: finkok_response.no_complement? ? 1 : 2 }
+          - if payment.can_create_complement?
+            %input.checkbox_payment.hidden-xs{ type: 'checkbox', name: "payments[ids][]", value: payment.id }
+            %input.collapse{ type: 'checkbox', name: "payments[general_public_ids][]", checked: missing_configurations.present?, value: payment.id, id: "payment_#{payment.id}_general_public" }
+        %td{ rowspan: finkok_response.no_complement? ? 1 : 2 }= payment.property ? payment.property.to_s : t('views.commons.not_identified')
+        %td= finkok_response.receptor_name
+        %td= finkok_response.receptor_rfc
+        %td= payment.folio
+        %td= to_currency amount: payment.price
+        %td= l(payment.paid_at, format: :default_hyphen) if payment.paid_at.present?
+        %td= finkok_response.payment_method
+        %td= payment.get_irs_status
+        %td
+          - if finkok_response.uuid.present?
+            - if payment.receipt.present?
+              = link_to payment_path(payment, 'pdf'), target: '_blank' do
+                %span.fa.fa-download
+                = finkok_response.uuid[0..6]
+            - else
+              = finkok_response.uuid[0..6]
+        %td
+          = link_to payment_path(payment, 'xml'), target: '_blank' do
+            %span.fa.fa-download
+            = t('download')
+        %td
+          - if payment.property && payment.receipt.present?
+            = link_to notify_receipt_payment_path(payment, source: 'irs_billed'), class: charges_button_style do
+              %span.fa.fa-envelope-o
+              = t('views.payments.notify')
+          - if finkok_response.no_complement? && payment.irs_status == Payment.irs_status.invert[I18n.t('constants.payments.irs_status.successfull')]
+            .btn.btn-xs.btn-default.btn-cancel{prepare_cancel_modal(finkok_response: finkok_response)}
+              %span.fa.fa-times
+              = t('views.commons.cancel')
+
+      - if finkok_response.complement_failed?
+        %tr
+          %td
+          %td{ colspan: 11}= complement_payment_error(payment)
+      - elsif finkok_response.complement_success?
+        - complement = finkok_response.finkok_complement
+        %tr
+          %td{ colspan: 7 }
+            #{t('.complement_created_at')} #{l(complement.irs_at, format: :default_hyphen)}
+          %td
+            - if complement.pdf.present?
+              = link_to finkok_response_path(complement, 'pdf'), target: '_blank' do
+                %span.fa.fa-download
+                = complement.uuid[0..6]
+            - else
+              = complement.uuid[0..6]
+          %td
+            = link_to finkok_response_path(complement, 'xml'), target: '_blank' do
+              %span.fa.fa-download
+              = t('download')
+          %td
+            .btn.btn-xs.btn-default.btn-cancel{ prepare_cancel_modal(finkok_response: complement) }
+              %span.fa.fa-times
+              = t('views.commons.cancel')
+      - elsif finkok_response.cancel_complement_failed?
+        %tr
+          %td
+          %td{ colspan:11}= complement_cancel_error(finkok_response)
+      - elsif !finkok_response.no_complement?
+        %tr
+          %td
+          %td{ colspan: 11 }= finkok_response.human_complement_status
+
+
+= automated_paginater_pagy(pagy_data: @pagy_payments)
+
+= render partial: 'mx_companies/modals/irs_billed_cancel_modal'

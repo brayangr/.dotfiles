@@ -1,0 +1,22 @@
+- columns = extra_hour_columns(employees: @employees, salaries: @salaries)
+= turbo_frame_tag "extra_hours_table" do
+  .table-root
+    .table-header
+      .col-xs-2
+        = render(SortableColumnComponent.new(**sort_salary_payment_drafts_params(I18n.t('views.remunerations.salary_payment_drafts.extra_hours.employee'))))
+      .col-xs-2= t('views.commons.rut')
+      .col-xs-8
+        - if columns[:extra_hour]
+          .col-sm-3= t('views.remunerations.salary_payment_drafts.extra_hours.first_extra_hour')
+        - if columns[:extra_hour_2]
+          .col-sm-3= t('views.remunerations.salary_payment_drafts.extra_hours.second_extra_hour')
+        - if columns[:extra_hour_3]
+          .col-sm-3= t('views.remunerations.salary_payment_drafts.extra_hours.third_extra_hour')
+        .col-sm-3= t('views.commons.actions')
+
+    - if @employees.any?
+      = render partial: 'async/remunerations/extra_hours_table_row', collection: @employees, as: :employee, locals: { columns: columns }
+    - else
+      %br
+        .col-xs-12.alert.table-empty.center= t('views.remunerations.salary_payment_drafts.no_employees')
+  = pagy_bootstrap_nav(@pagy_employees).html_safe

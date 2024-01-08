@@ -1,0 +1,9 @@
+.flex-column
+  .form-group{ data: { controller: 'input-validation', options: { deactivateAutoSubmit: true, filterType: 'maxCharacters', events: 'input', params: { maxLength: 70 } }.to_json } }
+    = discount_form.text_field :description, class: 'form-control input-sm', placeholder: t('views.remunerations.salary_payment_drafts.discounts.description_placeholder'), data: { action: 'focusout->remunerations--salary-payment-drafts--discounts-form#submit input->remunerations--salary-payment-drafts--discounts-form#enableSubmit', 'remunerations--salary-payment-drafts--discounts-form-target': 'descriptionInput', 'input-validation-target': 'input' }
+    %template{ data: { 'input-validation-target': 'warningTemplate' } }
+      %span.validation-alert.text-danger.bold{ data: { warning: 'WARNING' }}= 'INNERTEXT'
+    %div.message-container{ data: { 'input-validation-target': 'messageContainer' } }
+      %span.validation-message= I18n.t('errors.messages.max_characters', maxLength: 100)
+.flex-column{ data: { controller: 'initialize-autonumeric', 'initialize-autonumeric': { 'query-selector-value': "#employee-#{employee.id}-discounts-#{discount.id ? discount.id : 'new'}" }}}
+  = discount_form.text_field :amount, value: discount.id ? discount.amount : nil, placeholder: t('views.remunerations.salary_payment_drafts.amount_placeholder'), class: 'form-control input-sm', data: { action: 'focusout->remunerations--salary-payment-drafts--discounts-form#submit input->remunerations--salary-payment-drafts--discounts-form#enableSubmit', autonumeric: currency_field[:autonumeric].merge!({ uFos: true, vMin: 1 }), 'remunerations--salary-payment-drafts--discounts-form-target': 'amountInput' }, id: "employee-#{employee.id}-discounts-#{discount.id ? discount.id : 'new'}"

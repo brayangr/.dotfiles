@@ -1,0 +1,593 @@
+= javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.3/bootstrap-notify.min.js'
+
+- if !@no_errors&&@salary_payment.errors.any?
+  #error-explanation.alert.alert-danger
+    %h4= t('common.forms.show_errors')
+    %ul
+      - @salary_payment.errors.full_messages.each do |msg|
+        %li= msg.html_safe
+
+= form_for @salary_payment, url:( @salary_payment.id.present? ? remuneration_salary_payment_path(@salary_payment.id) : remuneration_salary_payments_path) , authenticity_token: true, html: {class: "form disable_enter preventive salary_payment_form"} do |f|
+  = hidden_field_tag "salary_id" , @salary_payment.salary_id
+  = hidden_field_tag "salary_payment[use_last_previred_data]" , false
+
+  = render(CollapsibleBoxComponent.new(id: 'period_box')) do |box|
+    - box.with_title do
+      = I18n.t('views.remunerations.salary_payments.form.box.period')
+    - box.with_body do
+      .row
+        .form-group.col-sm-6
+          = f.label(:payment_period_expense)
+          .fa.fa-info-circle{ data: {toggle: :tooltip }, title: I18n.t('views.remunerations.salary_payments.form.tooltip.payment_period_expense') }
+          .row
+            .col-sm-8
+              = select_tag :salary_month, options_for_select(select_months.map { |e| [e[:name] , e[:id]]  } , @salary_month), class: 'form-control update_salary_info customized-select', href: get_indicators_remuneration_salary_payments_path(employee_id: @employee.id)
+            .col-sm-4
+              = select_tag :salary_year, options_for_select(select_years(false, min_year).map { |e| [e[:name] , e[:name] ]  } , @salary_year), class: 'form-control update_salary_info customized-select', href: get_indicators_remuneration_salary_payments_path(employee_id: @employee.id)
+        - if @service_billing_in_salary_payments_setting != 2
+          .form-group.col-sm-6
+            .field
+              = label_tag t('views.remunerations.salary_payments.form.service_billing_title')
+              .checkboxes
+                = check_box_tag :auto_create_service_billing, true, @create_service_billing
+                = label_tag nil, t('views.remunerations.salary_payments.form.auto_create_billing'), class: 'medium'
+      .row{id: 'payment_period_field', style: "display: #{@create_service_billing ? 'block' : 'none'}"}
+        - if @service_billing_in_salary_payments_setting != 1
+          .form-group.col-sm-6
+            = f.label(:period_expense)
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: I18n.t('views.remunerations.salary_payments.form.tooltip.period_expense') }
+            .row
+              .col-sm-8
+                = select_tag :month, options_for_select(select_months.map { |e| [e[:name] , e[:id]]  } , @month), class: 'form-control customized-select'
+              .col-sm-4
+                = select_tag :year, options_for_select(select_years(false, min_year).map { |e| [e[:name] , e[:name] ] } , @year), class: 'form-control customized-select'
+        - if @aliquots.present?
+          .form-group.col-sm-6
+            = f.label(:aliquot_id)
+            = select_tag 'salary_payment[aliquot_id]', options_for_select(@aliquots.map { |e| [e.name , e.id] }.push(['Toda la comunidad', 0]), @salary_payment.aliquot_id.to_i), class: 'form-control'
+      .row
+        .form-row
+        - if @salary.daily_wage
+          .form-group.col-sm-6
+            = f.label(:worked_days)
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.small_text_worked_days') }
+            = f.text_field :worked_days, class: 'form-control'
+        - if @salary.bono_diario_colacion_movilizacion
+          .form-group.col-sm-6
+            = f.label :bono_days
+            = f.text_field :bono_days, class: 'form-control'
+
+  %h1.green= t('views.remunerations.salary_payments.form.payment_title')
+
+  = render(CollapsibleBoxComponent.new(id: 'non_taxable_bonuses', show: false)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.non_taxable_bonuses')
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :allocation_tool_wear
+            = f.text_field :allocation_tool_wear, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :carga_familiar_retroactiva
+            = f.text_field :carga_familiar_retroactiva, class: 'form-control', data: currency_field
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :viaticum
+            = f.text_field :viaticum, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :lost_cash_allocation
+            = f.text_field :lost_cash_allocation, class: 'form-control', data: currency_field
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :refund
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.refund_note') }
+            = f.text_field :refund, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :nursery
+            = f.text_field :nursery, class: 'form-control', data: currency_field
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :home_office
+            = f.text_field :home_office, class: 'form-control', data: currency_field
+
+  = render(CollapsibleBoxComponent.new(id: 'taxable_bonuses', show: false)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.taxable_bonuses')
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :bono_responsabilidad
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.responsibility_bonus') }
+            = f.text_field :bono_responsabilidad, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :aguinaldo
+            = f.text_field :aguinaldo, class: 'form-control', data: currency_field
+      .row
+        .form-row.clear
+          .form-group.col-sm-6
+            = f.label(:advance_gratifications)
+            = f.text_field :advance_gratifications, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :anual_gratifications
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.small_text_annual_gratifications', salary_payment: t('activerecord.models.salary_payment.one').downcase) }
+            = f.text_field :anual_gratifications, class: 'form-control', data: currency_field
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :commision
+            = f.text_field :commision, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :union_pay
+            = f.text_field :union_pay, class: 'form-control', data: currency_field
+      - if show_special_bonus?(@salary_payment)
+        .row
+          .form-row
+            .form-group.col-sm-6
+              = f.label :special_bonus
+              .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.special_bonus') }
+              = f.text_field :special_bonus, class: 'form-control', data: currency_field
+
+  = render(CollapsibleBoxComponent.new(id: 'add_bonuses')) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.add_taxables_bonuses')
+    - box.with_body do
+      = render partial: 'bonos'
+
+  = render(CollapsibleBoxComponent.new(id: 'additional_hour')) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.additional_hour')
+      .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.additional_hour_tooltip') }
+    - box.with_body do
+      .row
+        .form-row
+          - if @salary.additional_hour_price != 0
+            .form-group.col-sm-6
+              = f.label :extra_hour
+              %small.note= "#{@salary.additional_hour_price}%"
+              = f.number_field :extra_hour, class: 'form-control', step: 'any', min: 0
+          - if @salary.additional_hour_price_2 != 0
+            .form-group.col-sm-6
+              = f.label :extra_hour_2
+              %small= "#{@salary.additional_hour_price_2}%"
+              = f.number_field :extra_hour_2, class: 'form-control', step: 'any', min: 0
+
+      .row
+        .form-row
+          - if @salary.additional_hour_price_3 != 0
+            .form-group.col-sm-6
+              = f.label :extra_hour_3
+              %small= "#{@salary.additional_hour_price_3}%"
+              = f.number_field :extra_hour_3, class: 'form-control', step: 'any', min: 0
+
+  %h1.green= t('views.remunerations.salary_payments.form.discounts_title')
+
+  = render(CollapsibleBoxComponent.new(id: 'main_discounts')) do |box|
+    - box.with_title do
+      = I18n.t('views.remunerations.salary_payments.form.box.main_discounts')
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :advance
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.advance_note') }
+            %small.links
+              =link_to t('views.remunerations.salary_payments.form.see_month_advances'), remuneration_advances_path(employee_id: @salary_payment.employee.id), class: 'active'
+            = f.text_field :advance, class: 'form-control', data: currency_field, disabled:"disabled"
+          .form-group.col-sm-6
+            = f.label :credito_social
+            %small.links
+              =link_to t('views.remunerations.salary_payments.form.see_month_credits'), remuneration_social_credits_path, class: 'active'
+            = text_field_tag :credito_social, @salary_payment.ccaf , class: 'form-control', data: currency_field, disabled: 'disabled'
+
+        .form-row.clear
+          .form-group.col-sm-6
+            = f.label :dias_licencia
+            = f.number_field :dias_licencia, class: 'form-control activate_mt0 non-empty', step: 'any', min: 0, target:".personas_con_licencia"
+            %small.note= t('views.remunerations.salary_payments.form.small_text_discount_license')
+          .form-group.col-sm-6
+            = f.label :discount_days
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.discounts_days_note') }
+            = f.number_field :discount_days, class: 'form-control non-empty', step: 1, min: 0
+            %small.note= t('views.remunerations.salary_payments.form.small_text_discount_license')
+      .row
+        .form-row.clear
+          #ultimo_total_imponible_sin_licencia.form-group.col-sm-6{ style: 'display: none'}
+            = f.label :ultimo_total_imponible_sin_licencia
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.used_in_sis_calculation') }
+            %span.blue-review-box=t('views.remunerations.salary_payments.form.check')
+            - byebug
+            = f.text_field :ultimo_total_imponible_sin_licencia, class: 'form-control non-empty', data: currency_field
+          .form-group.col-sm-6
+            = f.label :discount_hours
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.discounts_hours_note') }
+            = f.text_field :discount_hours, class: 'form-control non-empty', step: 'any', min: 0
+  = render(CollapsibleBoxComponent.new(id: 'other_discounts', show: false)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.other_discounts')
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :union_fee
+            = f.text_field :union_fee, class: 'form-control', data: currency_field
+          .form-group.col-sm-6
+            = f.label :legal_holds
+            .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.legal_holds_note') }
+            = f.text_field :legal_holds, class: 'form-control', data: currency_field
+      .row
+        .col-xs-12
+          %h4.add_other_disocunts= t('views.remunerations.salary_payments.form.additional_discounts_title')
+      .additional_info_discounts
+        - @discounts.each_with_index do |b,index|
+          .row.additional_info
+            .form-row
+              .form-group.col-sm-6
+                = label :salary_additional_info, :name
+                = text_field_tag "discounts[#{index}][name]", b.name, class: 'form-control'
+              .form-group.col-sm-4
+                = label :salary_additional_info, :value
+                = text_field_tag "discounts[#{index}][value]", b.value, class: 'form-control', data: currency_field
+              .form-group.col-sm-2
+                %label &nbsp;
+                .btn.btn-default.form-control.deleteAdditionalInfo{ data: { action: 'click->bonos#destroyBono', controller: 'bonos' } }
+                  %i.fa.fa-trash
+                  = t('views.remunerations.salary_payments.form.delete_button')
+      .row.additional_info
+        .form-row
+          .form-group.col-sm-6
+            = label :salary_additional_info, :name
+            = text_field_tag 'discounts[{index}][name]', nil, class: 'form-control', placeholder: I18n.t('placeholders.salary_payments.discount')
+          .form-group.col-sm-4
+            = label :salary_additional_info, :value
+            = text_field_tag 'discounts[{index}][value]', nil, class: 'form-control', data: currency_field
+          .form-group.col-sm-2
+            %label &nbsp;
+            .btn.btn-default.form-control.addAdditionalInfo{ start_at: @discounts.length, target: '.additional_info_discounts', data: { action: 'click->bonos#addBono', controller: 'bonos' } }
+              %i.fa.fa-plus
+              = t('views.remunerations.salary_payments.form.add_button')
+            .btn.btn-default.form-control.deleteAdditionalInfo{ style: 'display: none;', data: { action: 'click->bonos#destroyBono', controller: 'bonos' } }
+              %i.fa.fa-trash
+              = t('views.remunerations.salary_payments.form.delete_button')
+
+  :ruby
+    salary_apvi = @salary.institucion_apvi != 'No Cotiza A.P.V.'
+    salary_apvc = @salary.institucion_apvc != 'No Cotiza A.P.V.'
+  %h1.green=t('views.remunerations.salary_payments.form.other_settings')
+
+  = render(CollapsibleBoxComponent.new(id: 'apv_box', show: salary_apvi || salary_apvc)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.apv_title')
+      .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.apv_note') }
+    - box.with_body do
+      .apv-container.supporting
+        .row
+          .form-row
+            .form-group.col-sm-6
+              = f.label :apv
+              = f.text_field :apv, class: 'form-control', data: currency_field, disabled: !salary_apvi
+            .form-group.col-sm-6
+              = f.label :tipo_apv
+              = f.select :tipo_apv, options_for_select(SalaryPayment.APV_TYPE,@salary_payment.tipo_apv ), {}, { class: "form-control" }
+        .row
+          .form-row
+            .form-group.col-sm-6
+              = f.label :deposito_convenido
+              .fa.fa-info-circle{ data: {toggle: :tooltip }, title: t('views.remunerations.salary_payments.form.apvi_tooltip') }
+              = f.text_field :deposito_convenido, class: 'form-control', data: currency_field, disabled: !salary_apvi
+            .form-group.col-sm-6
+              = f.label :cotizacion_trabajador_apvc
+              = f.text_field :cotizacion_trabajador_apvc, class: 'form-control', data: currency_field, disabled: !salary_apvc
+        .row
+          .form-row
+            .form-group.col-sm-6
+              = f.label :cotizacion_empleador_apvc
+              = f.text_field :cotizacion_empleador_apvc, class: 'form-control', data: currency_field, disabled: !salary_apvc
+
+  = render(CollapsibleBoxComponent.new(id: 'spouse_box', show: false)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.form.spouse_title')
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :spouse
+            = f.select :spouse, options_for_select([['No', false], ['Sí', true]], @salary_payment.spouse), {}, class: 'form-control'
+          .form-group.spouse.col-sm-6{ style: @salary_payment.spouse ? '' : 'display: none;'}
+            = f.label :spouse_capitalizacion_voluntaria
+            = f.text_field :spouse_capitalizacion_voluntaria, class: 'form-control', data: currency_field
+      .row
+        .form-row
+          .form-group.col-sm-6.spouse{ style: @salary_payment.spouse ? '' : 'display: none;' }
+            = f.label :spouse_periods_number
+            = f.number_field :spouse_periods_number, class: 'form-control', min: 0
+          .form-group.col-sm-6.spouse{ style: @salary_payment.spouse ? '' : 'display: none;' }
+            = f.label :spouse_voluntary_amount
+            = f.text_field :spouse_voluntary_amount, class: 'form-control', data: currency_field
+  = render(CollapsibleBoxComponent.new(id: 'protection_law', show: false)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salary_payments.protection_law')
+    - box.with_body do
+      .row
+        .form-row.clear
+          .form-group.col-sm-6
+            = f.label :employee_protection_law, t('views.remunerations.salary_payments.form.employee_protection_law')
+            = f.select :employee_protection_law, options_for_select([['No', false], ['Sí', true]], @salary_payment.employee_protection_law), {}, class: 'form-control'
+
+          .form-group.col-sm-6.protection_law_inputs{ style: @salary_payment.employee_protection_law ? '' : 'display: none;'}
+            = f.label :protection_law_code, t('views.remunerations.salary_payments.form.protection_law_code')
+            = select_tag "salary_payment[protection_law_code]" , options_for_select(SalaryPayment.protection_law_codes_select_tag, @salary_payment.protection_law_code), prompt: t('views.remunerations.salary_payments.form.select_law_protection_code'), class: "form-control status-select"
+
+        .form-row.clear
+          .form-group.col-sm-6.protection_law_inputs{ style: @salary_payment.employee_protection_law ? '' : 'display: none;'}
+            = f.label :suspension_or_reduction_days
+            = f.number_field :suspension_or_reduction_days, class: 'form-control', step: 'any', min: 1, max: 30
+
+
+          .form-group.col-sm-6.reduction_percentage_input{ style: (@salary_payment.employee_protection_law && @salary_payment.protection_law_code == 'reduccion_jornada_laboral') ? '' : 'display: none;'}
+            = f.label :reduction_percentage
+            = f.number_field :reduction_percentage, class: 'form-control', step: 'any', min: 1, max: 50
+
+  = render(CollapsibleBoxComponent.new(id: 'setting_for_cash_payment', show: false)) do |box|
+    -box.with_title do
+      = t('views.remunerations.salary_payments.form.setting_for_cash_payment')
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-6
+            = f.label :adjust_by_rounding
+            %small.links
+              = link_to 'Regla de redondeo', 'https://www.redondea.cl/', target: '_blank', class: 'active'
+            = f.select :adjust_by_rounding, options_for_select([['No', false], ['Sí', true]], @salary_payment.adjust_by_rounding), {}, class: 'form-control'
+
+  = render(CollapsibleBoxComponent.new(id: 'payment_message', show: false)) do |box|
+    - box.with_title do
+      = t('views.remunerations.salaries.payment_message')
+      .fa.fa-info-circle{ data: { toggle: :tooltip },  title: t('views.remunerations.salary_payments.sworn_statement') }
+    - box.with_body do
+      .row
+        .form-row
+          .form-group.col-sm-12
+            = f.fields_for :salary do |salary|
+              = salary.text_area :payment_message, value: @salary.payment_message ||= t('activerecord.attributes.salary.payment_message.default', community: current_community), class: 'form-control tinymce', placeholder: I18n.t('placeholders.salary_payments.payment_message'), rows: 16
+              = tinymce
+
+  .afc_informed_rent{ style: 'display:none;' }
+    %h1.green
+      = t('views.remunerations.salary_payments.form.afc_informed_rent')
+      %span.label.blue-review-box=t('views.remunerations.salary_payments.form.check')
+    .row
+      .form-row
+        .form-group.col-sm-6
+          = f.label :afc_informed_rent
+          %small.icon.fa.fa-question-circle-o.fa-lg{ data: { toggle: :tooltip },  title: t('views.remunerations.salary_payments.form.afc_informed_rent_tooltip')}
+          = f.text_field :afc_informed_rent, class: 'form-control', data: currency_field
+
+  .row
+    .col-sm-4.pull-right
+      %h4 &nbsp;
+      #preview_btn.btn.btn-green-cf.btn-block= t('views.commons.button.continue')
+
+    .col-sm-4.pull-right
+      %h4 &nbsp;
+      = link_to remuneration_employee_path(@employee), class: 'no-underline' do
+        .btn.btn-default.btn-block.medium= t('views.commons.back')
+#preview-modal.modal.fade{ role: 'dialog', tabIndex: '-1', data: { keyboard: 'false' } }
+#previred-warning-modal
+
+= render partial: 'remuneration/salary_payments/modals/extra_hours_article'
+:javascript
+
+  $(document).on('ready', function(){
+    document.addEventListener('input', function(e) {
+      if (e.target.classList.value.includes('bono-input')) {
+        let current_bonus_input = e.target
+        let delimiter = current_bonus_input.id.includes('__') ? '__' : '_'
+        let current_bonus_class = current_bonus_input.id.split(delimiter)[2]
+        let index = current_bonus_input.id.split(delimiter)[1]
+        let value = parseInt(current_bonus_input.value.match(/\d/g)?.join('') || 0)
+        let new_value = current_bonus_class == 'value' ? value * parseFloat(#{@bonus_factor}) : value / parseFloat(#{@bonus_factor})
+        let other_bonus_class = current_bonus_class == 'value' ? 'post_tax_value' : 'value'
+        let other_bonus_input = document.getElementById('bonos'+ delimiter + index + delimiter + other_bonus_class)
+        other_bonus_input.disabled = value != 0
+        document.getElementById('bonos' + delimiter + index + delimiter + 'post_tax').value = current_bonus_class != 'value'
+        AutoNumeric.getAutoNumericElement($('#bonos' + delimiter + index + delimiter + other_bonus_class).get(0)).set(new_value)
+      } else if (e.target.id == 'salary_payment_dias_licencia') {
+          let utisl = document.querySelector('#ultimo_total_imponible_sin_licencia');
+          if (e.target.value > 0) {
+            utisl.style.display = 'block'
+          }
+          else {
+            utisl.style.display = 'none'
+          }
+        }
+    })
+
+    $('.update_salary_info').change(function(){
+      let month = $("#salary_month").val()
+      let year = $("#salary_year").val()
+      $.ajax({
+        url: $(this).attr("href"),
+        data: {month: month, year: year},
+        type: "POST",
+        success: function(result) {
+          eval(result)
+        }
+      })
+    })
+
+    $("select#salary_payment_spouse").change(function(){
+      $("option:selected", this).each(function(){
+        var str = this.value;
+        if (str == "false"){
+          $(".spouse").hide();
+        }
+        else if (str == "true"){
+          $(".spouse").show();
+        }
+      })
+    })
+
+    function options_when_selected_code_15(){
+      set_value_to_reduction_percentage()
+      $(".reduction_percentage_input").show();
+      hide_ultimo_imponible_sin_licencia();
+      $('.afc_informed_rent').hide();
+    }
+
+    function options_when_selected_code_13_14(){
+      $(".reduction_percentage_input").hide();
+      show_ultimo_imponible_sin_licencia();
+      $('.afc_informed_rent').show();
+      set_value_to_reduction_percentage();
+    }
+
+    function handle_selected_protection_law(selected_value){
+      if ( selected_value.length != 0 ) {
+        if ( selected_value != "reduccion_jornada_laboral" ){
+          options_when_selected_code_13_14();
+        }
+        else {
+          options_when_selected_code_15();
+        }
+      }
+    }
+
+    var employee_selected_value = $('#salary_payment_employee_protection_law').children("option").filter(":selected").val()
+
+    if ( employee_selected_value == "false"){
+      $(".protection_law_inputs").hide();
+      $(".reduction_percentage_input").hide();
+    }
+    else if ( employee_selected_value == "true"){
+      $(".protection_law_inputs").show();
+      $('#show-protection-law').click();
+      var  law_code  = $("#salary_payment_protection_law_code").children("option").filter(":selected").val()
+      handle_selected_protection_law(law_code)
+    }
+
+
+    function show_ultimo_imponible_sin_licencia(){
+      var str = $("#salary_payment_protection_law_code").children("option").filter(":selected").val()
+      if (str.length != 0){
+        $('.personas_con_licencia').show()
+      }
+    }
+
+    function hide_ultimo_imponible_sin_licencia(){
+      if ($('#salary_payment_dias_licencia').val() == "0" || $('#salary_payment_dias_licencia').val().length == 0){
+        $('.personas_con_licencia').hide()
+      }
+    }
+
+
+    function set_value_to_reduction_percentage(){
+      if (parseInt($('#salary_payment_reduction_percentage').val()) > 50) $('#salary_payment_reduction_percentage').val(50)
+    }
+
+
+
+    function set_value_to_reduction_percentage(){
+      if ($('#salary_payment_afc_informed_rent').val().length == 0 ){
+        AutoNumeric.getAutoNumericElement($("#salary_payment_afc_informed_rent").get(0)).set(0);
+      }
+    }
+
+    $("select#salary_payment_employee_protection_law").change(function(){
+      $("option:selected", this).each(function(){
+        var str = this.value;
+        if (str == "false"){
+          $(".protection_law_inputs").hide();
+          $(".reduction_percentage_input").hide();
+        }
+        else if (str == "true"){
+          $(".protection_law_inputs").show();
+          var str =  $("#salary_payment_protection_law_code").children("option").filter(":selected").val()
+          handle_selected_protection_law(str)
+        }
+      })
+    })
+
+    $("select#salary_payment_protection_law_code").change(function(){
+      $("option:selected", this).each(function(){
+        var str = this.value;
+        handle_selected_protection_law(str)
+      })
+    })
+
+    $(".activate_mt0").keyup(function(){
+      target = $(".show_mt0"+$(this).attr("target"))
+      if (this.value != "0"){
+        target.show();
+      } else{
+        target.hide();
+      }
+
+    })
+
+    $('#auto_create_service_billing').change(function() {
+        if(this.checked) {
+          $('#payment_period_field').show();
+        }
+        else{
+          $('#payment_period_field').hide();
+        }
+      });
+
+    $('#preview_btn').click(function(){
+      var form_id = $('.salary_payment_form').attr('id');
+      input_element = $('.salary_payment_form').find('input[data-autonumeric]');
+      disabled_elements = $('.salary_payment_form').find('input[data-autonumeric][disabled]');
+      input_element.each(function() {
+        autonumericElement = AutoNumeric.getAutoNumericElement($(this).getPath());
+        $(this).attr('disabled', null);
+        value = autonumericElement.getNumber();
+        $(this).val(value);
+      });
+
+      document.getElementById('salary_payment_salary_attributes_payment_message').value = tinymce.activeEditor.getContent();
+
+      var form_value = jQuery('#'+form_id).serialize() + "&employee_id=#{@employee.id}";
+
+      if (#{@salary_payment.id.present?}) {
+        form_value += "&salary_payment_id=#{@salary_payment.id}"
+      }
+      $.ajax({
+        type: "GET",
+        url: "#{preview_modal_remuneration_salary_payments_path}",
+        data: form_value,
+        beforeSend: function() {
+          $("#preview_btn").html("<span class='fa fa-spinner fa-pulse'>");
+          $("#preview_btn").attr('disabled',true)
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          $.notify({
+            message: 'Hubo un error, intente de nuevo.',
+            icon: 'fa fa-times'
+          }, {
+            type: 'danger'
+          });
+        },
+        complete: function() {
+          $("#preview_btn").html("#{t('views.commons.button.continue')}");
+          $("#preview_btn").attr('disabled',false);
+          // Reenable disabled fields
+          disabled_elements.attr('disabled', 'disabled');
+        },
+      })
+    })
+  })
+
+  $('.non-empty').change(function(event) {
+    value = event.target.value
+
+    if (value === '' || value === undefined) {
+      $(event.target).val(0)
+    }
+  })
+
+  $('.non-empty').change()

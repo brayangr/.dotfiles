@@ -1,0 +1,31 @@
+@import "coloresw8";
+
+.advances-text {
+  font-weight: 500;
+}
+
+.advances-table {
+  overflow-y: auto;
+}
+
+.advances-file-button {
+  background-color: white !important;
+}
+
+.inline-file-upload {
+  display: flex;
+  align-items: center;
+}
+
+.advances-file-input {
+  padding: 0 !important;
+}
+
+.advances-file-buttons {
+  display: flex;
+  padding: 4px !important;
+}
+
+.count-div {
+  width: 2%;
+}

@@ -1,0 +1,79 @@
+.table-root
+  .table-header.custom-table-header#advances-table-header
+    .count-div
+    .hidden-xs.col-xs-2.left= t('views.remunerations.advances.payment_date')
+    .hidden-xs.col-xs-2.left= t('views.remunerations.advances.remuneration_period')
+    .hidden-xs.col-xs-2.left= t('views.remunerations.advances.service_billing_period')
+    .hidden-xs.col-xs-1.right= t('views.remunerations.advances.amount')
+    .hidden-xs.col-xs-2.left= t('views.remunerations.advances.comment')
+    .hidden-xs.col-xs-2.left= t('views.commons.actions')
+
+  - @advances.each.with_index(1) do |advance, i|
+    .table-row{ data: { controller: 'remunerations--advances', 'remunerations--advances': { 'id-value': advance.id, 'is-recurrent-value': advance.recurrent } } }
+      .count-div
+        = i
+        - if advance.recurrent?
+          %span.fa.fa-retweet{ title: t('views.remunerations.advances.tooltips.recurrent'), data: { toggle: 'tooltip' }}
+      .col-xs-2.left= advance.paid_at.present? ? (I18n.l advance.paid_at.to_date, format: I18n.t('date.formats.default_slash')) : '-'
+      .col-xs-2.left= advance.period_expense.to_s
+      .col-xs-2.left= advance.service_billing&.period_expense.to_s
+      .col-xs-1.right= to_currency amount: advance.price
+      .col-xs-2.left= advance.comment
+      .col-xs-2.actions-column{ id: "actions-#{advance.id}" }
+        - if advance.voucher?
+          = link_to voucher_remuneration_advance_path(advance), target: 'blank' do
+            .btn.btn-default.btn-s{ 'data-toggle': :tooltip, title: t('views.remunerations.advances.tooltips.sworn_declaration') }
+              %span.fa.fa-download
+
+        - if can? :update, advance
+          .btn.btn-default.btn-s{ data: { toggle: :tooltip, title: t('views.remunerations.advances.tooltips.upload_document'), action: 'click->remunerations--advances#toggleActions' } }
+            %small.fa.fa-cloud-upload
+
+        - if advance.documentation?
+          = link_to documentation_remuneration_advance_path(advance), target: 'blank' do
+            .btn.btn-default.btn-s{ 'data-toggle': :tooltip, title: t('views.remunerations.advances.tooltips.download_document') }
+              %span.fa.fa-file-pdf-o
+        - else
+          %div{ 'data-toggle': :tooltip, title: t('views.remunerations.advances.tooltips.document_not_uploaded') }
+            .btn.btn-default.btn-s.disabled
+              %span.fa.fa-file-pdf-o
+
+        - if can? :update, advance
+          = link_to edit_remuneration_advance_path(advance, month: @month, year: @year) do
+            .btn.btn-default.btn-s{ 'data-toggle': :tooltip, title: t('views.remunerations.advances.tooltips.edit')}
+              %small.fa.fa-pencil
+
+        - if (can? :destroy, advance) && !advance.service_billing&.period_expense&.common_expense_generated
+          %span{ data: { toggle: 'modal', target: '#destroy-advance-modal', action: 'click->remunerations--advances#setDestroyModalData' } }
+            .btn.btn-default.btn-s{ 'data-toggle': :tooltip, title: t('views.remunerations.advances.tooltips.erase')}
+              %small.fa.fa-trash
+
+        - if can?(:update, advance) && advance.recurrent?
+          %span{ data: { toggle: 'modal', target: '#set-not-recurrent-modal', action: 'click->remunerations--advances#setNotRecurrentModalData' } }
+            .btn.btn-default.btn-s{ 'data-toggle': :tooltip, title: t('views.remunerations.advances.tooltips.not_recurrent') }
+              %small.fa.fa-times
+
+      .col-xs-2.actions-column.hidden{ id: "upload-file-action-#{advance.id}" }
+        - if can? :update, advance
+          = form_for advance, url: remuneration_advance_path(advance), html: { class: 'form inline-file-upload', multipart: true } do |f|
+            .fileinput-new.input-group{"data-provides" => :fileinput}
+              .form-control.file-name-form-control{ type: 'file' }
+                %i.glyphicon.glyphicon-file.fileinput-exists
+                .fileinput-filename
+              %span.input-group-addon.btn.btn-default.btn-file.advances-file-button
+                %span.fileinput-new= t('views.commons.button.examine')
+                %span.fileinput-exists= t('views.commons.change')
+                %input{name: 'advance[documentation]', type: :file}
+            %button.btn.btn-default.btn-s{ 'data-toggle': :tooltip, title: t('common.save'), type: :submit }
+              %small.fa.fa-check
+            .btn.btn-default.btn-s{ data: { toggle: :tooltip, title: t('common.delete'), dismiss: :fileinput, action: 'click->remunerations--advances#toggleActions' }, href: '#' }
+              %small.fa.fa-times
+
+- if @advances.empty?
+  %br
+  .col-xs-12.alert.alert-danger.center= t('views.commons.no_result')
+
+= automated_paginater(@advances)
+
+= render partial: 'destroy_advance_modal'
+= render partial: 'set_not_recurrent_modal'

@@ -1,0 +1,72 @@
+%span.dropdown.options-btn.pull-right{ data: { controller: 'remuneration--lre', 'remuneration--lre': { 'month-value': @month, 'year-value': @year, 'month-name-value': @cur_month_name, 'has-rut-value': current_community.rut.present?, 'active-employees-count-value': @active_employees_count, 'salary-payments-count-value': @salary_payments_in_period, 'inactive-employees-count-value': @inactive_employees_with_salary_payment_and_rut } } }
+  %button.btn.btn-default.btn-md.text-center.dropdown-toggle.toggle_inline_with{ id: 'dropdown_menu_options', data: { toggle: :dropdown } }
+    .fa.fa-ellipsis-v{ style: 'min-width: 12px;', data: { toggle: :tooltip, placement: :top, trigger: :hover }, title: t('views.commons.option.others') }
+    %span= t('views.commons.option.others')
+  .dropdown-menu.dropdown-menu-right.custom-dropdown.bills-custom-drop-down{style: 'width: max-content'}
+    - if can? :pdf, SalaryPayment
+      - if current_community.get_setting_value('lre_enabled') == 1
+        .dropdown-item{ data: { toggle: 'tooltip', placement: 'bottom', title: t('views.remunerations.lre.remunerations_e_book'), action: 'click->remuneration--lre#confirmDownload' }, id: 'downloadLREbutton' }
+          .icon.fa.fa-download
+          = t('views.remunerations.lre.button_download_lre')
+
+      - if can? :statutory_declaration, Employee
+        = link_to statutory_declaration_remuneration_employees_path do
+          .dropdown-item
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_statutory_declaration')
+
+      - if @period_expense.pdf_advances.present?
+        = link_to (@period_expense.pdf_advances.present? ? pdf_advances_period_expense_path(id: @period_expense.id) : '#'), target: '_blank' do
+          .dropdown-item{ data: { intro: t('views.remunerations.employees.download_advances_pdf'), position: :bottom } }
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_pdf_advances')
+      - else
+        .dropdown-item.disabled{ data: { intro: t('views.remunerations.employees.download_advances_pdf'), position: :bottom} }
+          .icon.fa.fa-download
+          = t('views.remunerations.employees.button_pdf_advances')
+
+      - if @period_expense.pdf_salary_payments.present?
+        = link_to (@period_expense.pdf_salary_payments.present? ? pdf_salary_payments_period_expense_path(id: @period_expense.id) : '#'), target: '_blank', id: 'btn-all-payments' do
+          .dropdown-item{ data: { intro: t('views.remunerations.employees.download_salary_payments_pdf', content: t('activerecord.models.salary_payment.other').downcase), position: :bottom} }
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_pdf_salary_payments')
+      - else
+        .dropdown-item.disabled{ data: { intro: t('views.remunerations.employees.download_salary_payments_pdf', content: t('activerecord.models.salary_payment.other').downcase), position: :bottom} }
+          .icon.fa.fa-download
+          = t('views.remunerations.employees.button_pdf_salary_payments')
+
+    - if can?(:regenerate_service_billings, Employee)
+      = link_to regenerate_service_billings_remuneration_employees_path(month: @month, year: @year) do
+        .dropdown-item.danger{ data: { intro: t('views.remunerations.employees.generate_pending_service_billings'), position: :bottom } }
+          .icon.fa.fa-refresh
+          = t('views.remunerations.employees.button_regenerate_service_billings')
+
+
+
+
+    - if can? :book, Employee
+      =link_to book_remuneration_employees_path(month: @month, year: @year) do
+        .dropdown-item{ data: { intro: t('views.remunerations.employees.download_remunerations_book'), position: :top } }
+          .icon.fa.fa-book
+          = t('views.remunerations.employees.button_book')
+
+    - if current_community.employees.exists?
+      - if @active_employees_count == @salary_payments_count
+        = link_to get_previred_remuneration_employees_path(:txt, month: @month, year: @year), id: 'link-get-previred' do
+          .dropdown-item.info{ data: { intro: t('views.remunerations.employees.download_previred_remunerations_file'), position: :bottom } }
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_get_previred')
+      - else
+        .dropdown-item.info{ onclick: "showModal('#{@missing_salary_payments.first(10)}')" }
+          .icon.fa.fa-download
+          = t('views.remunerations.employees.button_get_previred')
+    - else
+      .dropdown-item.info.disabled{ onclick: "showModal('#{@missing_salary_payments.first(10)}')" }
+        .icon.fa.fa-download
+        = t('views.remunerations.employees.button_get_previred')
+
+  - if current_community.get_setting_value('lre_enabled') == 1
+    = render partial: 'remuneration/employees/modals/community_without_rut'
+    = render partial: 'remuneration/employees/modals/lre_errors'
+    = render partial: 'remuneration/employees/modals/confirm_download_lre_modal'
+    = render partial: 'remuneration/employees/modals/not_salary_payments_alert_modal'

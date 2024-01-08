@@ -1,0 +1,3 @@
+web: rails s -b 0.0.0:3000
+web-front: ./bin/webpack-dev-server
+jobs: rake jobs:work

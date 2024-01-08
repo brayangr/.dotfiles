@@ -1,0 +1,20 @@
+.date-selector{ data: { controller: 'date-selector initialize-tooltip' } }
+  = hidden_field_tag @variable_name, @default_value
+  .dropdown{ data: { toggle: (:tooltip if @tooltip)}, title: (@tooltip if @tooltip) }
+    .input-wrapper
+      %input{ type: 'text', value: l(@default_value), id: "#{@id}-selector-input", class: ['selected-value', @class].join(' '), disabled: @disabled, data: { action: 'change->date-selector#updateDate', **@data } }
+    %button{ type: 'button', id: "#{@id}-selector-dropdown", 'data-toggle': 'dropdown', aria: { haspopup: 'true', expanded: 'false' }, class: @class, data: { action: 'click->date-selector#showCalendar' }, disabled: @disabled }
+      %i.display-options
+        .fa.fa-calendar
+      %i.hide-options
+        .fa.fa-calendar-o
+    .dropdown-menu{ 'aria-labelledby':  "#{@id}-selector-dropdown", data: { 'dropup-auto': 'false' } }
+      .dropdown-item.previous-month{ data: { action: 'click->date-selector#previousMonth' } }
+        .fa.fa-chevron-left
+      .dropdown-item.current-month{ data: { action: 'click->date-selector#changeMonth', month: @default_value.month, year: @default_value.year } }
+        = l(@default_value, format: '%B %Y').capitalize
+      .dropdown-item.next-month{ data: { action: 'click->date-selector#nextMonth' } }
+        .fa.fa-chevron-right
+      - I18n.t('date.short_week_names').each do |day_name|
+        .dropdown-item.day-of-the-week{ data: { action: 'click->date-selector#stopPropagation' } }
+          = day_name

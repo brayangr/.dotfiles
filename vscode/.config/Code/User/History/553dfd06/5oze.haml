@@ -1,0 +1,45 @@
+= turbo_frame_tag "worked_days_employee_#{employee.id}" do
+  - salary = @salaries[employee.id]
+  - salary_payment_draft = @salary_payment_drafts[salary.id]
+  - if salary_payment_draft.present?
+    - reset_id = "reset-#{employee.id}"
+    = form_with id: reset_id, url: reset_remuneration_salary_payment_draft_path(salary_payment_draft.id), method: :post, authenticity_token: true do |f|
+      = hidden_field_tag 'tab', :worked_days
+
+    = form_for salary_payment_draft , url: remuneration_salary_payment_draft_path(salary_payment_draft.id), method: 'PATCH', remote: true, authenticity_token: true, html: { class: "form form-inline hide-inputs", id: "form-#{employee.id}" } do |f|
+      = f.hidden_field :updater_id, value: current_user.id
+      = hidden_field_tag 'tab', :worked_days
+
+      .table-row.flex-row
+        .flex-column= employee.full_name_last_name_first
+        .flex-column= employee.rut&.rutify
+        .flex-column
+          = f.number_field :worked_days, value: salary_payment_draft.worked_days, class: 'form-control input-sm', id: "worked-days-#{employee.id}", min: 0, data: { action: 'focusout->salary-payment-drafts#call input->salary-payment-drafts#enableSubmit', tab: 'worked_days' }
+        .flex-column
+          - if salary.bono_diario_colacion_movilizacion
+            = f.number_field :bono_days, value: salary_payment_draft.bono_days, class: 'form-control input-sm', id: "bono-days-#{employee.id}", min: 0, data: { action: 'focusout->salary-payment-drafts#call  input->salary-payment-drafts#enableSubmit', tab: 'worked_days' }
+          - else
+            = f.number_field :bono_days, value: '', class: 'form-control input-sm', disabled: true, title: t('views.remunerations.salary_payment_drafts.worked_days.bono_days_tooltip'), data: { toggle: 'tooltip' }, style: 'display: inline-block'
+        .flex-column
+          = f.button type: :submit, form: reset_id, class: 'btn btn-default btn-s', title: t(:restart), data: { toggle: 'tooltip' }, style: 'display: inline-block' do
+            .fa.fa-history
+  - else
+    = form_for SalaryPaymentDraft.new, url: remuneration_salary_payment_drafts_path, method: 'POST', remote: true, authenticity_token: true, html: { class: "form form-inline hide-inputs", id: "form-#{employee.id}" } do |f|
+      = f.hidden_field :salary_id, value: salary.id
+      = f.hidden_field :payment_period_expense_id,  value: @payment_period_expense.id
+      = f.hidden_field :creator_id, value: current_user.id
+      = hidden_field_tag 'tab', :worked_days
+
+      .table-row.flex-row
+        .flex-column= employee.full_name_last_name_first
+        .flex-column= employee.rut&.rutify
+        .flex-column
+          = f.number_field :worked_days, value: 0, class: 'form-control input-sm', id: "worked-days-#{employee.id}", min: 0, data: { action: 'focusout->salary-payment-drafts#call', tab: 'worked_days' }
+        .flex-column
+          - if salary.bono_diario_colacion_movilizacion
+            = f.number_field :bono_days, value: 0, class: 'form-control input-sm', id: "bono-days-#{employee.id}", min: 0, data: { action: 'focusout->salary-payment-drafts#call', tab: 'worked_days' }
+          - else
+            = f.number_field :bono_days, value: '', class: 'form-control input-sm', disabled: true, title: t('views.remunerations.salary_payment_drafts.worked_days.bono_days_tooltip'), data: { toggle: 'tooltip' }, style: 'display: inline-block'
+        .flex-column
+          .btn.btn-default.btn-s{ title: t(:restart), data: { toggle: 'tooltip' }, style: 'display: inline-block' }
+            .fa.fa-history

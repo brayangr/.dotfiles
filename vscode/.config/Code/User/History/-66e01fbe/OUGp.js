@@ -1,0 +1,24 @@
+import { Controller } from 'stimulus'
+import AutoNumeric from 'autonumeric'
+
+export default class extends Controller {
+  static values = { querySelector: String }
+  static targets = ['input'];
+
+  connect() {
+    let autoNumericInput;
+
+    if (this.querySelectorValue !== '') {
+      autoNumericInput = document.querySelector(this.querySelectorValue)
+    } else {
+      autoNumericInput = this.inputTarget
+    }
+
+    debugger
+
+    new AutoNumeric(
+      this.querySelectorValue,
+      $.parseAutonumericData(JSON.parse(autoNumericInput.dataset.autonumeric))
+    )
+  }
+}

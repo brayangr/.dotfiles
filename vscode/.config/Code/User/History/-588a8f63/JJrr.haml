@@ -1,0 +1,24 @@
+.form-horizontal
+  - if !event.rejected? && event.active?
+    - if can?(:confirm, event) && !event.confirmed?
+      = link_to event_actions_remote_modals_path(id: 'remote-event-actions', title: I18n.t('views.events.actions.confirmation_title'), message: I18n.t('views.events.actions.confirmation_message'), accept_button: I18n.t('views.events.actions.confirmation_accept_button'), to_index: to_index, common_space_id: event.common_space_id, event_id: event, go_action: 'confirm'), remote: true do
+        .btn.btn-xs.btn-default{ data: {toggle: 'tooltip', title: I18n.t('views.events.actions.confirmation_tooltip')} }
+          %span.i.fa.fa-check
+
+    - if can?(:reject, event) && !(event.confirmed? && event.expired?)
+      - message = event.decorate.reject_message
+      = link_to event_actions_remote_modals_path(id: 'remote-event-actions', title: I18n.t('views.events.actions.rejection_title'), message: message, accept_button: I18n.t('views.events.actions.rejection_accept_button'), to_index: to_index, common_space_id: event.common_space_id, event_id: event, go_action: 'reject'), remote: true do
+        .btn.btn-xs.btn-default{ data: {toggle:'tooltip', title: I18n.t('views.events.actions.rejection_tooltip')} }
+          %span.i.fa.fa-remove
+
+    - if can?(:destroy, event) && event.confirmed?
+      - message = event.decorate.destroy_message
+      - accept_button = event.decorate.destroy_accept_button
+      = link_to event_actions_remote_modals_path(id: 'remote-event-actions', title: I18n.t('views.events.actions.delete_title'), message: message, accept_button: accept_button, to_index: to_index, common_space_id: event.common_space_id, event_id: event, go_action: 'delete'), remote: true do
+        .btn.btn-xs.btn-default{ data: {toggle:'tooltip', title: I18n.t('views.events.actions.delete_tooltip')} }
+          %span.i.fa.fa-trash-o
+
+  = link_to '#', href: "#event-modal-#{event.id}-#{tab rescue nil }", data: { toggle: :modal } do
+    .btn.btn-xs.btn-default.action-width-btn{ data: { toggle: :tooltip, placement: :top }, title: I18n.t('views.events.actions.info_tooltip') }
+      %span.i.fa.fa-info
+  = render partial: 'information_audits', locals: { event: event, audits: event.audits, tab: tab rescue nil }

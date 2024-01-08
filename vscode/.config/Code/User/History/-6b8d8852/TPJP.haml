@@ -1,0 +1,16 @@
+= render(ModalComponent.new(id: 'confirm-clean-form-modal')) do |modal|
+  - modal.with_body do
+    .modal-body
+      %h5.modal-title
+        = t('views.remunerations.salary_payment_drafts.modals.confirm_clean_form.title')
+
+      %p.body-text
+        = t('views.remunerations.salary_payment_drafts.modals.confirm_clean_form.body')
+  - modal.with_footer do
+    .col-lg-6
+      %button.btn.btn-default.btn-block.modal-btn{ 'aria-label': 'Close', 'data-dismiss': 'modal', type: 'button' }
+        = t('cancel')
+    .col-lg-6
+      %a#set-not-recurrent-btn{ data: { method: :put } }
+        .btn.btn-red-cf.btn-block
+          = t('views.remunerations.salary_payment_drafts.modals.confirm_clean_form.submit')

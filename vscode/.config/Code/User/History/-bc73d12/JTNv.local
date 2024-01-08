@@ -1,0 +1,23 @@
+FROM ruby:3.0.3
+
+WORKDIR /app
+
+ARG BUNDLE_GITHUB__COM
+ARG NODE_VERSION
+ARG NPM_TOKEN
+
+RUN apt update
+RUN apt install -y ca-certificates curl gnupg
+RUN mkdir -p /etc/apt/keyrings
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+# Ruby gems
+COPY Gemfile .
+COPY Gemfile.lock .
+
+# Node
+COPY package.json .
+COPY yarn.lock .
+
+RUN bundle install
+#RUN yarn

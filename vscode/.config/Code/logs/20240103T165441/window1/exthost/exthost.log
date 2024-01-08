@@ -1,0 +1,44 @@
+2024-01-03 16:54:42.513 [info] Extension host with pid 82133 started
+2024-01-03 16:54:42.513 [info] Skipping acquiring lock for /home/brayan/.config/Code/User/workspaceStorage/3e5e6d6f7e9976681a79a6f5de822ba8.
+2024-01-03 16:54:42.857 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-01-03 16:54:42.869 [info] ExtensionService#_doActivateExtension Shopify.ruby-lsp, startup: false, activationEvent: 'onLanguage:ruby'
+2024-01-03 16:54:42.997 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2024-01-03 16:54:43.000 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: '*'
+2024-01-03 16:54:43.199 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2024-01-03 16:54:43.227 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2024-01-03 16:54:43.943 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2024-01-03 16:54:44.049 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2024-01-03 16:54:53.679 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-01-03 16:54:53.682 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-01-03 16:54:53.690 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2024-01-03 16:54:53.693 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2024-01-03 16:54:53.720 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2024-01-03 16:54:53.948 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-01-03 16:54:53.974 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-01-03 16:54:58.754 [info] Eager extensions activated
+2024-01-03 17:07:30.374 [warning] TextEditor is closed/disposed
+2024-01-03 17:08:55.255 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2024-01-03 17:08:57.513 [warning] TextEditor is closed/disposed
+2024-01-03 17:09:06.279 [warning] TextEditor is closed/disposed
+2024-01-03 17:09:53.853 [warning] TextEditor is closed/disposed
+2024-01-03 17:10:09.135 [warning] TextEditor is closed/disposed
+2024-01-03 17:31:22.827 [warning] TextEditor is closed/disposed
+2024-01-03 17:34:58.360 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:03.383 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:13.756 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:22.550 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:26.413 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:37.624 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:50.794 [warning] TextEditor is closed/disposed
+2024-01-03 17:36:52.439 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2024-01-03 17:37:02.211 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2024-01-03 17:50:31.800 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2024-01-03 17:57:58.206 [warning] TextEditor is closed/disposed
+2024-01-03 18:00:25.349 [warning] TextEditor is closed/disposed
+2024-01-03 18:05:56.351 [warning] TextEditor is closed/disposed
+2024-01-03 18:06:28.850 [warning] TextEditor is closed/disposed
+2024-01-03 18:08:13.727 [warning] TextEditor is closed/disposed
+2024-01-03 18:09:38.511 [warning] TextEditor is closed/disposed
+2024-01-03 18:25:43.065 [warning] TextEditor is closed/disposed
+2024-01-03 18:25:45.792 [warning] TextEditor is closed/disposed
+2024-01-03 18:25:49.325 [warning] TextEditor is closed/disposed

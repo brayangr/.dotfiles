@@ -1,0 +1,28 @@
+FROM ruby:3.0.3
+
+WORKDIR /app
+
+ARG BUNDLE_GITHUB__COM
+ARG NODE_VERSION
+ARG NPM_TOKEN
+
+RUN apt update
+RUN apt install -y ca-certificates curl gnupg build-essential
+RUN mkdir -p /etc/apt/keyrings
+# RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+# RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
+RUN apt update
+RUN apt install nodejs -y
+RUN npm install -g yarn
+
+# Ruby gems
+COPY Gemfile .
+COPY Gemfile.lock .
+
+# Node
+COPY package.json .
+COPY yarn.lock .
+
+RUN bundle install
+RUN yarn

@@ -1,0 +1,1367 @@
+Initializing document watcher...
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/data_import_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_report_files_links_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_payment_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: Using EditorConfig core...
+app/jobs/generate_pas_pdf_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_pas_pdf_job.rb: Using EditorConfig core...
+app/jobs/generate_pas_pdf_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_transfers_excel_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/import_business_transactions_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/its_time_to_invoice_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/leaving_communities_previous_week_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/normalize_community_transactions_date_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/notify_about_to_deactivate_community_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/notify_account_updated_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/notify_admin_automatic_property_request_user_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_irs_invoice_document_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_invoice_payments_excel_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_irs_invoice_document_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payment_drafts/index_response.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payment_drafts/index_response.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: Using EditorConfig core...
+config/locales/jobs/es.yml: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/period_expense.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/period_expense.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/period_expense.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/period_expense.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/bundle_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/bundle_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/bundle_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/bundle_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/maintenances_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/service_billings_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/service_billings_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/graphql/mutations/create_property_user_validation.rb: {"insertSpaces":true,"tabSize":2}
+web/app/graphql/mutations/create_property_user_validation.rb: {"insertSpaces":true,"tabSize":2}
+web/app/graphql/mutations/create_property_user_validation.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/communities_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payment_drafts/index_response.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_pas_pdf_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/data_import_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/filter_salary_payments.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/forms/remuneration/salary_payment_form.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/data_import_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+/home/brayan/.config/Code/User/settings.json: Using EditorConfig core...
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/models/salary_payment.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/creator.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/pre_calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/pre_calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/pre_calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: Using EditorConfig core...
+app/lib/internals/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/lib/internals/calculate_salary.rb: Using EditorConfig core...
+app/lib/internals/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+undefined: {}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/lib/internals/calculate_salary.rb: Using EditorConfig core...
+app/lib/internals/calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/services/remuneration/salary_payments/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/models/period_expense.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/db/schema.rb: {"insertSpaces":true,"tabSize":2}
+web/app/models/employee.rb: {"insertSpaces":true,"tabSize":2}
+web/db/schema.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+undefined: {}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: Using EditorConfig core...
+app/services/remuneration/salary_payments/pre_calculate_salary.rb: editor.action.trimTrailingWhitespace
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/app/services/remuneration/salary_payments/pre_calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+web/app/lib/internals/calculate_salary.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+undefined: {}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/base_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: Using EditorConfig core...
+app/builders/salary_payments/full_time_builder.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: Using EditorConfig core...
+app/builders/salary_payments/salary_payment_director.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+undefined: {}
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/config/puma.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+undefined: {}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/custom_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/custom_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: Using EditorConfig core...
+app/jobs/generate_salary_payments_job.rb: editor.action.trimTrailingWhitespace
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/custom_job.rb: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: Using EditorConfig core...
+config/routes.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/controllers/remuneration/salary_payments_controller.rb: Using EditorConfig core...
+app/controllers/remuneration/salary_payments_controller.rb: editor.action.trimTrailingWhitespace
+web/app/builders/salary_payments/base_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/full_time_builder.rb: {"insertSpaces":true,"tabSize":2}
+web/app/builders/salary_payments/salary_payment_director.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/config/locales/jobs/es.yml: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: Using EditorConfig core...
+config/routes.rb: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: Using EditorConfig core...
+config/routes.rb: editor.action.trimTrailingWhitespace
+web/config/routes.rb: Using EditorConfig core...
+config/routes.rb: editor.action.trimTrailingWhitespace
+web/config/routes.rb: Using EditorConfig core...
+config/routes.rb: editor.action.trimTrailingWhitespace
+web/config/routes.rb: {"insertSpaces":true,"tabSize":2}
+web/config/routes.rb: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/config/routes.rb: {"insertSpaces":true,"tabSize":2}
+web/app/controllers/remuneration/salary_payments_controller.rb: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/custom_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/jobs/generate_salary_payments_job.rb: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/admin/payments_supports/transactions.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/admin/payments_supports/transactions.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/async/no_period_property_fines/_property_fine_groups_table.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/async/remunerations/_bonus_table_row.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/categories/modals/_migrate_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/categories/modals/_migrate_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/categories/modals/_migrate_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/components/modal_component.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/components/modal_component.rb: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/components/month_selector_component.rb: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/admin/communities/_customer_success_settings.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: Using EditorConfig core...
+app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: editor.action.trimTrailingWhitespace
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}
+web/app/views/remuneration/employees/modals/_massive_salary_payments_modal.html.haml: {"insertSpaces":true,"tabSize":2}

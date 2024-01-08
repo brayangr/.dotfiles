@@ -1,0 +1,305 @@
+def next?
+  File.basename(__FILE__) == 'Gemfile.next'
+end
+source 'https://rubygems.org'
+
+if next?
+  # This is the next Rails version your application will run
+  gem 'rails', '~> 7.0.0'
+else
+  # This is the Rails version your application currently runs
+  gem 'rails', '~> 7.0.0'
+end
+
+ruby '3.0.3'
+
+gem 'audit'
+gem 'bundler', '~> 2.2.32'
+gem 'rake', '>= 13.0.6'
+base_git_path = 'https://github.com/ComunidadFeliz'
+api_git              = "#{base_git_path}/api.git"
+scrapper_edifito_git = "#{base_git_path}/scraper-edifito.git"
+service_object_git   = "#{base_git_path}/service-objects.git"
+
+gem 'payments_api_client', git: 'https://github.com/ComunidadFeliz/PaymentsApiClient.git', branch: 'main'
+gem 'view_component'
+gem 'lookbook'
+
+# Herramientas de desarrollo
+group :development, :test do
+  gem 'annotate', '>=3.2.0'
+  gem 'bullet', '~> 7.0', '>= 7.0.7'
+  gem 'byebug'
+  gem 'dotenv-rails'
+  gem 'haml_lint', '~> 0.28' # linter para haml. Para veriones mayores a 0.28 requiere ruby 2.4
+  gem 'hub', '>= 1.10.2', require: nil # agrega funcionalidades extra de GitHub en la consola
+  gem 'memory_profiler', '~> 1.0', '>= 1.0.1' # For technical discoveries of memory consumption issues
+  gem 'missing_t', '~> 0.4.1' # Validación de traducciones
+  gem 'next_rails', '~> 1.0' # Herramienta para facilitar la actualización de version de Rails.
+  gem 'parallel_tests'
+  gem 'progress_bar' # para mostrar una progressbar en la consola en procesos largos
+  gem 'rack-mini-profiler' # para mostrar estadísticas de velocidad y queries en las vistas
+  gem 'rack-user_agent' # para testear web crawlers
+  gem 'railroady' # para generar diagramas E-R de la base de datos. Uso: rake diagram:all
+  gem 'rename' # para cambiarle el nombre(y la carpeta) a la app con: rails g rename:app_to DefaultInit
+  gem 'rspec-activemodel-mocks'
+  gem 'rspec_junit_formatter' # Formatea los resultados de los rspec para Jenkins
+  gem 'simplecov', require: false # Reporte de coverage para la suite de test
+  gem 'web-console'
+end
+
+gem 'colorize', '~> 0.8.1'
+
+# Necesario para AWS
+gem 'listen'
+
+#webpack and react
+gem 'webpacker'
+gem 'react-rails'
+
+gem "i18n-js"
+
+# barcodes
+gem 'barby'
+# QR Code
+gem 'rqrcode'
+
+# Lazy Highcharts
+gem 'highcharts-rails'
+gem 'lazy_high_charts', git: 'https://github.com/michelson/lazy_high_charts', branch: 'master'
+# Login G+
+gem 'omniauth-google-oauth2'
+# Login Facebook
+gem 'omniauth-facebook'
+# Dependencias Apple oauth
+gem 'jwt'
+gem 'json-jwt' # favor de no borrar el Oauth con Apple se muere
+# Para el manejor de assets
+gem 'actionpack', '>= 6.1.5'
+
+## --DEPRECATED ON RAILS 5.2 --
+##gem 'autoprefixer-rails'
+## --DEPRECATED ON RAILS 5.2 --
+
+gem 'coffee-rails', '>= 4.0.0'
+gem 'jquery-rails' # jquery en los assets de rails
+gem 'jquery-ui-rails' # jquery en los assets de rails
+gem 'rails-erd'
+gem 'remotipart'
+gem 'sassc-rails'
+gem 'uglifier', '>= 1.3.0'
+
+gem 'awesome_print'
+# Typeahead templating
+gem 'handlebars_assets'
+#uso de herencia en modelo
+gem 'active_type'
+
+# Boostrap
+gem 'bootstrap-sass', '>= 3.3'
+gem 'font-awesome-rails' # para usar iconos de bootstrap extendidos
+
+# Herramientas de Rails
+gem 'bootstrap-validator-rails' # Validador de inputs
+# gem "thin" #servidor bueno para consultas ajax y buena combinacion con unicorn para multithread
+gem 'bcrypt', require: 'bcrypt' # para encriptar contraseñas y tokens
+gem 'cancancan'
+gem 'haml', '5.2.2'
+gem 'haml-rails', '>= 0.5.3' # para usar vistas .haml
+gem 'sendgrid', '>= 1.0.1'
+
+gem 'will_paginate-bootstrap' # paginador que hace bien la pega
+gem 'pagy' # Paginador moderno
+# para declarar variables de entorno(en el application.yml). Se suben a heroku con: figaro heroku:set
+gem 'figaro', '>= 0.6.3'
+gem 'friendly_id' # the name says it all
+
+# Herramientas de testing
+gem 'capybara', '>= 2.0.3', group: :test
+gem 'database_cleaner-active_record', group: :test # optimizations to clean between tests.
+gem 'email_spec', '>= 1.4.0', group: :test # https://github.com/bmabey/email-spec
+gem 'factory_bot_rails', '>= 4.2.0', group: %i[development test]
+gem 'faker', group: %i[test development]
+gem 'rubocop-faker', group: %i[test development]
+gem 'rubocop', group: %i[test development]
+gem 'rubocop-graphql', group: %i[test development]
+gem 'minitest', '5.15.0', group: :test
+gem 'rack_session_access'
+gem 'rails-controller-testing'
+gem 'rspec', '3.10.0', group: %i[development test]
+gem 'rspec-rails', '5.0.0', group: %i[development test]
+gem 'shoulda-context', '2.0.0', group: %i[test development]
+gem 'shoulda-matchers', '5.3.0', group: %i[test development]
+gem 'webmock', group: :test
+
+# PDF
+gem 'combine_pdf', '1.0.21'
+gem 'prawn-icon'
+gem 'prawn-qrcode'
+gem 'prawn-rails'
+gem 'prawn-markup'
+gem 'prawn-html'
+gem 'wicked_pdf', '~> 2.7.0'
+gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
+
+# gem 'bootstrap-wysihtml5-rails'
+
+# subir archivos usando AmazonS3
+# gem 'cocaine', "~> 0.5.3" TO DELETE
+gem 'active_elastic_job', '3.2.0' # Necesario para migración a AWS
+gem 'aws-sdk-sqs', '~> 1.34', group: %i[production aws staging test] # Necesario para migración a AWS
+gem 'aws-sdk-s3', '~> 1.84'
+gem 'aws-sdk-ec2', '~> 1.208'
+gem 'aws-sdk-autoscaling', '~> 1.48'
+gem 'aws-sdk-dynamodb', '~> 1.57'
+gem 'aws-sdk-sns', '~> 1.35'
+
+gem 'mimemagic'
+
+gem 'pg', '~> 1.2', '>= 1.2.3'
+
+# gem "unicorn", ">= 4.3.1" #servidor con multithread en producion
+gem 'puma', '~> 5.6.2' # en remplazo de unicorn
+
+# HEROKU ADDONS
+gem 'delayed_job_active_record' # para correr trbajos en background con workers
+gem 'oj', '~> 3.10.12' # necesario para rollbar con aws
+gem 'rollbar' # , '~> 1.3.0'
+gem 'scout_apm'
+# gem "workless" # auto scale
+gem 'daemons'
+
+# carrierwave
+gem 'carrierwave', '~> 2.2', '>= 2.2.2'
+gem 'fog-aws'
+
+# gem 'protected_attributes'
+gem 'activerecord-import' # mass import
+gem 'activerecord-session_store'
+
+# decorator
+gem 'draper'
+# maneja cancancan con draper
+gem 'draper-cancancan'
+
+# manejar timeout
+gem 'rack-timeout'
+# Manejar respuestas, necesario para rails 4.2
+gem 'responders'
+# gem 'handlebars'
+
+# To import Excel
+gem 'roo-xls'
+gem 'roo', '~> 2.8', '>= 2.8.3'
+
+# Exportar excel
+gem 'axlsx_styler', '~> 1.1'
+gem 'caxlsx_rails', '~> 0.6.3'
+gem 'caxlsx', '~> 3.2'
+gem 'spreadsheet'
+
+gem 'numbers_and_words' # number to words I18n.with_locale(:es) { 21.to_words ordinal: true }
+
+gem 'digest-crc'
+
+# Calendar
+gem 'bootstrap3-datetimepicker-rails'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+
+# Tutorials
+# gem 'bootstrap-tour-rails'
+
+gem 'recaptcha', require: 'recaptcha/rails'
+
+# For authentication
+gem 'signer', '~> 1.4', '>= 1.4.2'
+
+# Soap library.
+# gem 'savon', '~> 2.11', '>= 2.11.1'
+gem 'savon', '~> 2.12', '>= 2.12.0'
+# CSM
+# gem 'dashing-rails'
+# Conexión Dropbox
+gem 'dropbox_api'
+# RUT validation
+gem 'rut_validation'
+
+# CF API
+gem 'jbuilder'
+
+# Sanitizar HTML en inputs
+gem 'sanitize', '~> 6.0.0'
+
+# Formatear output como tabla
+# mejora como se muestran las respuestas de tablas de rails c. Uso: Hirb.enable
+gem 'hirb'
+
+gem 'money-rails', '~>1'
+
+gem 'api', git: api_git, branch: 'main'
+gem 'scrapper-edifito', '>= 1.3.15', git: scrapper_edifito_git, branch: 'main'
+gem 'service-object', git: service_object_git, branch: 'main'
+
+# Manejo de zonas horarias
+gem 'tzinfo'
+
+# Mobile API
+gem 'batch-loader' # Evita N+1
+gem 'graphiql-rails', '~> 1.7.0', group: %i[development staging]
+gem 'graphql', '~> 1.11.4'
+gem 'graphql-guard'
+
+# Búsquedas avanzadas
+gem 'ransack'
+
+# Creating Google Calendar events to posts
+gem 'google-api-client'
+gem 'googleauth'
+
+# Uso de zonas horarias
+gem 'tzinfo-data'
+
+# Money handler
+gem 'monetize'
+
+# keep track of modifications
+gem 'paper_trail'
+
+# add sql union to activerecord
+gem 'active_record_union'
+
+# encapsulate business logic
+gem 'interactor', '~> 3.0'
+gem 'bootsnap'
+
+gem 'rack-cors'
+
+gem 'cocoon'
+
+#Fuzzy match with ruby
+gem 'fuzzy_match', '~> 2.1'
+
+# For styling HTML emails with CSS easily
+gem 'premailer-rails'
+
+gem 'js-routes'
+
+# Browser/Device detection
+gem 'browser', require: 'browser/browser'
+
+gem 'tinymce-rails'
+gem 'tinymce-rails-langs'
+gem "turbo-rails", "~> 1.4"
+
+gem "mixpanel-ruby"
+
+gem "google-authenticator-rails", "3.2.1"
+
+# tamaño imagenes uri
+gem 'fastimage'
+
+gem 'redis', '~> 4.0'
+# Internationalization
+gem 'i18n-tasks', '~> 1.0.12'
+gem 'rails-i18n', '~> 7.0.7'

@@ -1,0 +1,131 @@
+= form_for (@advance = (@advance ? @advance : Advance.new)), url: @advance.id.present? ? remuneration_advance_path(@advance) : remuneration_advances_path, method: (@advance.id ? "put" : "post"), html: {class: "form preventive", multipart: true} do |f|
+  - if !@no_errors&&@advance.errors.any?
+    #error-explanation.alert.alert-danger
+      %h4= t('common.forms.show_errors')
+      %ul
+        - @advance.errors.full_messages.each do |msg|
+          %li= msg.html_safe
+  - if can?(:edit, current_community) && @create_service_billing
+    .visible-xs
+      %br
+    .col-xs-12
+      %h4.alert.alert-success.bg-danger
+        = t('messages.notices.advance.create_service_billing_check')
+        = link_to edit_community_path(current_community, tab: "remuneration") do
+          .btn.btn-default= t('views.commons.here').downcase
+  .row
+    .form-row
+      .form-group.col-sm-6
+        = f.label(:price) + '*'
+        = f.text_field :price, {class: "form-control", data: currency_field, autocomplete: "off"}
+      .form-group.col-sm-6
+        = f.label(:comment)
+        = f.text_field :comment, class: 'form-control'
+    .form-row
+      .form-group.col-sm-6
+        .field
+          =f.label(:paid_at)
+          .input-group.date.datetimepicker.input-append.pull-left
+            = f.text_field :paid_at, value: @advance.paid_at.present? ? @advance.paid_at.strftime("%d/%m/%Y") : "" , class: 'form-control date_selector', placeholder: 'Fecha', 'data-format' => "dd/MM/yyyy"
+            %span.input-group-addon.add-on
+              %i.fa.fa-calendar.cal_selector{"data-time-icon"=>"icon-time", "data-date-icon"=>"icon-calendar"}
+      .form-group.col-xs-12.col-sm-6
+        =f.label(:discount_period)
+        .row
+          .from_group.col-sm-8
+            = select_tag :month, options_for_select(select_months.map { |e| [e[:name] , e[:id]]  } , @month), class: 'form-control'
+          .clear.visible-xs
+            %br
+          .from_group.col-sm-4
+            = select_tag :year, options_for_select(select_years(false, min_year).map { |e| [e[:name] , e[:name] ]  } , @year), class: 'form-control'
+
+
+  .row
+    .form-row
+      .form-group.col-sm-6
+        = f.label (:documentation)
+        - unless @advance.new_record? || !@advance.documentation?
+          .attach-actions.inline
+            = link_to documentation_remuneration_advance_path(@advance) do
+              .btn.btn-xs.btn-default
+                %span.fa.fa-download
+                = I18n.t('views.commons.download_file')+' '+@advance.documentation.filename
+            %span &nbsp;
+            = link_to I18n.t('views.commons.delete_attachment'), destroy_documentation_remuneration_advance_path(@advance), remote: true, class: "btn btn-xs btn-danger toggle_with", id: "remove_file"
+          #attach_spinner{hidden:"hidden"}
+            .fa.fa-spinner.fa-spin.fa-3x.fa-fw
+            = I18n.t('views.commons.deleting_file')
+        .fileinput.fileinput-new.input-group{"data-provides" => "fileinput"}
+          .form-control{"data-trigger" => "fileinput"}
+            %i.glyphicon.glyphicon-file.fileinput-exists
+            %span.fileinput-filename
+          %span.input-group-addon.btn.btn-default.btn-file
+            %span.fileinput-new= I18n.t('views.commons.select_file')
+            %span.fileinput-exists= I18n.t('views.commons.change')
+            %input{:name => "advance[documentation]", :type => "file"}/
+          %a.input-group-addon.btn.btn-default.fileinput-exists{"data-dismiss" => "fileinput", :href => "#"}= I18n.t('views.commons.delete')
+      .form-row
+        .form-group.col-xs-12.col-sm-6
+          =f.label(:recurrent)
+          .checkbox
+            %label
+              = f.check_box :recurrent, {:checked => false}
+              = I18n.t('views.advance.form.recurrent_question')
+          = I18n.t('views.advance.form.recurrent_explain')
+
+  %br
+  .row
+    .form_row
+      -if !@service_billing_created
+        .form-group.col-xs-12.col-sm-6
+          .field
+            =f.label(I18n.t('views.advance.form.associated_service_billing'))
+            .checkbox
+              %label
+                = check_box_tag :auto_create_service_billing, value = true, checked = @create_service_billing
+                = I18n.t('views.advance.form.create_service_billing')
+
+        .form-group.col-xs-12.col-sm-6{id: "payment_period_field", style: "display: #{@create_service_billing ? 'block' : 'none'}"}
+          = f.label(:payment_date)
+          .row
+            .col-sm-8
+              = select_tag :payment_month, options_for_select(select_months.map { |e| [e[:name] , e[:id]]  } , @month), class: 'form-control'
+            .clear.visible-xs
+              %br
+            .col-sm-4
+              = select_tag :payment_year, options_for_select(select_years(false, min_year).map { |e| [e[:name] , e[:name] ]  } , @year), class: 'form-control'
+        .form-group.col-xs-12.col-sm-6.col-sm-offset-6.clear{id: "payment_state_field", style: "display: #{@create_service_billing ? 'block' : 'none'}"}
+          .row
+            .col-sm-12
+              - mf_enabled = current_community&.automatic_bank_reconciliation_enabled?
+              = f.label(I18n.t('views.advance.form.state'))
+              = select_tag :payment_state, options_for_select(ServiceBilling.states.map{ |d| [d[1] , d[0]]}, !mf_enabled), class: 'form-control', disabled: mf_enabled
+      -else
+        .col-xs-12.col-sm-6
+          = t('activerecord.errors.models.service_billing.attributes.id.has_been_created').html_safe
+
+
+  = hidden_field_tag :employee_id, @employee.id
+
+  .row
+    .col-sm-4.pull-right
+      %h4 &nbsp;
+      = f.submit 'Guardar',  class: 'btn btn-success btn-block disable_after_click permanent', id: (@advance.id? ? '' : "advance_submit")
+    .col-sm-4.pull-right
+      %h4 &nbsp;
+      = link_to remuneration_advances_path(employee_id: @employee) do
+        .btn.btn-default.btn-block Volver
+
+:javascript
+  $(document).ready(function() {
+    $('#auto_create_service_billing').change(function() {
+      if(this.checked) {
+        $('#payment_period_field').show();
+        $('#payment_state_field').show();
+      }
+      else{
+        $('#payment_period_field').hide();
+        $('#payment_state_field').hide();
+      }
+    });
+  });

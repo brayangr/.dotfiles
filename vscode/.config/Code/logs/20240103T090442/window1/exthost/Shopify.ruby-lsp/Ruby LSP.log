@@ -1,0 +1,717 @@
+2024-01-03 09:04:44.573 [info] Checking if asdf is available on the path with command: /bin/zsh -ic 'asdf --version'
+2024-01-03 09:04:44.886 [info] Checking if chruby is available on the path with command: /bin/zsh -ic 'chruby --version'
+2024-01-03 09:04:45.170 [info] Checking if rbenv is available on the path with command: /bin/zsh -ic 'rbenv --version'
+2024-01-03 09:04:45.457 [info] Discovered version manager rbenv
+2024-01-03 09:04:45.457 [info] Trying to activate Ruby environment with command: /bin/zsh -ic 'rbenv exec ruby -rjson -e "STDERR.printf(%{RUBY_ENV_ACTIVATE%sRUBY_ENV_ACTIVATE}, JSON.dump({ env: ENV.to_h, ruby_version: RUBY_VERSION, yjit: defined?(RubyVM::YJIT) }))"' inside directory: /home/brayan/work/web
+2024-01-03 09:04:46.596 [info] Ruby LSP> Skipping custom bundle setup since /home/brayan/work/web/.ruby-lsp/Gemfile.lock already exists and is up to date
+
+2024-01-03 09:04:46.618 [info] Ruby LSP> Running bundle install for the custom bundle. This may take a while...
+Ruby LSP> Command: ((bundle check && bundle update ruby-lsp debug) || bundle install) 1>&2
+
+2024-01-03 09:04:46.769 [info] Warning: the running version of Bundler (2.2.32) is older than the version that created the lockfile (2.2.34). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.2.34`.
+
+2024-01-03 09:04:46.932 [info] The Gemfile's dependencies are satisfied
+
+2024-01-03 09:04:47.072 [info] Warning: the running version of Bundler (2.2.32) is older than the version that created the lockfile (2.2.34). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.2.34`.
+
+2024-01-03 09:04:48.392 [info] Fetching gem metadata from https://rubygems.org/
+2024-01-03 09:04:48.394 [info] .
+2024-01-03 09:04:48.865 [info] .
+2024-01-03 09:04:49.118 [info] .
+2024-01-03 09:04:49.387 [info] .
+2024-01-03 09:04:49.601 [info] .
+2024-01-03 09:04:49.609 [info] .
+2024-01-03 09:04:50.507 [info] 
+
+2024-01-03 09:04:50.572 [info] Resolving dependencies...
+2024-01-03 09:04:50.901 [info] .
+2024-01-03 09:04:50.963 [info] 
+
+2024-01-03 09:04:51.094 [info] Using rake 13.0.6
+
+2024-01-03 09:04:51.099 [info] Using concurrent-ruby 1.2.2
+Using minitest 5.15.0
+Using builder 3.2.4
+
+2024-01-03 09:04:51.099 [info] Using erubi 1.12.0
+Using mini_portile2 2.8.4
+Using racc 1.7.1
+Using crass 1.0.6
+Using rack 2.2.8
+Using nio4r 2.5.9
+
+2024-01-03 09:04:51.099 [info] Using websocket-extensions 0.1.5
+Using marcel 1.0.2
+Using mini_mime 1.1.2
+
+2024-01-03 09:04:51.099 [info] Using date 3.3.3
+Using timeout 0.4.0
+Using aws-eventstream 1.2.0
+Using aws-partitions 1.568.0
+
+2024-01-03 09:04:51.100 [info] Using jmespath 1.6.1
+Using bundler 2.2.32
+
+2024-01-03 09:04:51.100 [info] Using method_source 1.0.0
+
+2024-01-03 09:04:51.100 [info] Using thor 1.2.2
+
+2024-01-03 09:04:51.100 [info] Using zeitwerk 2.6.11
+
+2024-01-03 09:04:51.100 [info] Using multi_json 1.15.0
+
+2024-01-03 09:04:51.195 [info] Using public_suffix 5.0.0
+Using aes_key_wrap 1.1.0
+Using ansi 1.5.0
+Using api 0.1.0 from https://github.com/ComunidadFeliz/api.git (at main@6818fe0)
+Using ast 2.4.2
+Using awesome_print 1.9.2
+Using htmlentities 4.3.4
+Using rubyzip 2.3.2
+Using barby 0.6.8
+Using batch-loader 2.0.1
+Using bcrypt 3.1.17
+
+2024-01-03 09:04:51.195 [info] Using smart_properties 1.17.0
+Using bindata 2.4.10
+
+2024-01-03 09:04:51.195 [info] Using bindex 0.8.1
+
+2024-01-03 09:04:51.195 [info] Using msgpack 1.4.5
+
+2024-01-03 09:04:51.195 [info] Using execjs 2.8.1
+Using babel-source 5.8.35
+
+2024-01-03 09:04:51.238 [info] Using byebug 11.1.3
+
+2024-01-03 09:04:51.239 [info] Using matrix 0.4.2
+
+2024-01-03 09:04:51.239 [info] Using regexp_parser 2.2.1
+
+2024-01-03 09:04:51.239 [info] Using ssrf_filter 1.0.7
+Using choice 0.2.0
+
+2024-01-03 09:04:51.239 [info] Using chunky_png 1.4.0
+
+2024-01-03 09:04:51.242 [info] Using coffee-script-source 1.12.2
+
+2024-01-03 09:04:51.276 [info] Using ffi 1.15.5
+Using browser 5.3.1
+Using uniform_notifier 1.16.0
+Using cancancan 3.3.0
+Using mini_magick 4.11.0
+Using cocoon 1.2.15
+Using colorize 0.8.1
+
+2024-01-03 09:04:51.282 [info] Using ruby-rc4 0.1.5
+Using connection_pool 2.2.5
+
+2024-01-03 09:04:51.283 [info] Using rexml 3.2.5
+
+2024-01-03 09:04:51.283 [info] Using daemons 1.4.1
+
+2024-01-03 09:04:51.303 [info] Using stringio 3.1.0
+Using io-console 0.7.1
+
+2024-01-03 09:04:51.303 [info] Using declarative 0.0.20
+Using diff-lcs 1.5.0
+
+2024-01-03 09:04:51.303 [info] Using digest-crc 0.6.4
+
+2024-01-03 09:04:51.303 [info] Using docile 1.4.0
+
+2024-01-03 09:04:51.304 [info] Using database_cleaner-core 2.0.1
+
+2024-01-03 09:04:51.304 [info] Using dotenv 2.8.1
+
+2024-01-03 09:04:51.305 [info] Using ruby2_keywords 0.0.5
+
+2024-01-03 09:04:51.305 [info] Using draper-cancancan 1.1.1
+
+2024-01-03 09:04:51.305 [info] Using faraday-net_http 3.0.0
+
+2024-01-03 09:04:51.305 [info] Using jwt 2.5.0
+
+2024-01-03 09:04:51.349 [info] Using unf_ext 0.0.8.2
+Using multi_xml 0.6.0
+Using excon 0.92.3
+
+2024-01-03 09:04:51.349 [info] Using fastimage 2.2.7
+
+2024-01-03 09:04:51.349 [info] Using formatador 1.1.0
+Using mime-types-data 3.2022.0105
+
+2024-01-03 09:04:51.350 [info] Using fuzzy_match 2.1.0
+
+2024-01-03 09:04:51.372 [info] Using gems 1.2.0
+
+2024-01-03 09:04:51.377 [info] Using os 1.1.4
+
+2024-01-03 09:04:51.387 [info] Using memoist 0.16.2
+
+2024-01-03 09:04:51.388 [info] Using httpclient 2.8.3
+
+2024-01-03 09:04:51.422 [info] Using trailblazer-option 0.1.2
+
+2024-01-03 09:04:51.426 [info] Using retriable 3.1.2
+Using webrick 1.7.0
+
+2024-01-03 09:04:51.427 [info] Using rotp 6.2.2
+
+2024-01-03 09:04:51.427 [info] Using rqrcode_core 1.2.0
+Using graphql 1.11.10
+
+2024-01-03 09:04:51.427 [info] Using tilt 2.2.0
+Using parallel 1.21.0
+
+2024-01-03 09:04:51.427 [info] Using rainbow 3.1.1
+
+2024-01-03 09:04:51.428 [info] Using ruby-progressbar 1.11.0
+
+2024-01-03 09:04:51.466 [info] Using uber 0.1.0
+Using unicode-display_width 2.1.0
+Using temple 0.10.2
+Using sysexits 1.2.0
+Using hash-deep-merge 0.1.1
+
+2024-01-03 09:04:51.467 [info] Using hashie 5.0.0
+Using highline 2.0.3
+
+2024-01-03 09:04:51.467 [info] Using hirb 0.7.3
+Using htmlbeautifier 1.4.2
+
+2024-01-03 09:04:51.467 [info] Using socksify 1.7.1
+
+2024-01-03 09:04:51.495 [info] Using hashdiff 1.0.1
+Using hub 1.12.4
+Using interactor 3.1.2
+
+2024-01-03 09:04:51.497 [info] Using json 2.6.1
+
+2024-01-03 09:04:51.497 [info] Using language_server-protocol 3.17.0.3
+
+2024-01-03 09:04:51.497 [info] Using rb-fsevent 0.11.1
+
+2024-01-03 09:04:51.497 [info] Using redcarpet 3.5.1
+
+2024-01-03 09:04:51.522 [info] Using net-http-digest_auth 1.4.1
+Using rubyntlm 0.6.3
+
+2024-01-03 09:04:51.522 [info] Using webrobots 0.1.2
+Using memory_profiler 1.0.1
+Using missing_t 0.4.1
+Using mixpanel-ruby 2.3.0
+
+2024-01-03 09:04:51.522 [info] Using nori 2.6.0
+Using oj 3.10.18
+
+2024-01-03 09:04:51.523 [info] Using options 2.3.2
+Using payments_api_client 0.1.0 from https://github.com/ComunidadFeliz/PaymentsApiClient.git (at main@5bc4703)
+
+2024-01-03 09:04:51.523 [info] Using pdf-core 0.9.0
+
+2024-01-03 09:04:51.523 [info] Using pg 1.3.4
+
+2024-01-03 09:04:51.523 [info] Using ttfunk 1.7.0
+Using prism 0.19.0
+
+2024-01-03 09:04:51.587 [info] Using woothee 1.13.0
+Using rouge 4.0.0
+Using rack-timeout 0.6.0
+
+2024-01-03 09:04:51.587 [info] Using railroady 1.6.0
+
+2024-01-03 09:04:51.595 [info] Using redis 4.8.1
+
+2024-01-03 09:04:51.595 [info] Using rollbar 3.3.0
+
+2024-01-03 09:04:51.595 [info] Using ruby-ole 1.2.12.2
+
+2024-01-03 09:04:51.607 [info] Using remotipart 1.4.4
+Using rspec-support 3.10.3
+
+2024-01-03 09:04:51.608 [info] Using semantic_range 3.0.0
+Using service-object 0.1.0 from https://github.com/ComunidadFeliz/service-objects.git (at main@836d75c)
+
+2024-01-03 09:04:51.608 [info] Using shoulda-context 2.0.0
+Using simplecov-html 0.12.3
+Using simplecov_json_formatter 0.1.4
+Using will_paginate 3.3.1
+
+2024-01-03 09:04:51.608 [info] Using wkhtmltopdf-binary 0.12.3.1
+Using i18n 1.14.1
+Using tzinfo 2.0.6
+Using nokogiri 1.15.3 (x86_64-linux)
+
+2024-01-03 09:04:51.608 [info] Using rack-test 2.1.0
+Using websocket-driver 0.7.6
+Using net-protocol 0.2.1
+
+2024-01-03 09:04:51.608 [info] Using aws-sigv4 1.4.0
+Using gyoku 1.3.1
+Using request_store 1.5.1
+Using figaro 1.2.0
+
+2024-01-03 09:04:51.609 [info] Using sprockets 4.2.0
+Using rack-protection 2.2.0
+Using puma 5.6.2
+
+2024-01-03 09:04:51.609 [info] Using rack-cors 1.1.1
+Using rack-mini-profiler 3.0.0
+Using rack-proxy 0.7.2
+
+2024-01-03 09:04:51.609 [info] Using rack_session_access 0.2.0
+
+2024-01-03 09:04:51.609 [info] Using uglifier 4.2.0
+Using autoprefixer-rails 10.4.2.0
+
+2024-01-03 09:04:51.609 [info] Using babel-transpiler 0.7.0
+
+2024-01-03 09:04:51.609 [info] Using bootsnap 1.11.1
+
+2024-01-03 09:04:51.609 [info] Using addressable 2.8.1
+
+2024-01-03 09:04:51.609 [info] Using parser 3.1.1.0
+
+2024-01-03 09:04:51.609 [info] Using ruby-ll 2.1.3
+
+2024-01-03 09:04:51.609 [info] Using coffee-script 2.4.1
+Using combine_pdf 1.0.21
+
+2024-01-03 09:04:51.609 [info] Using crack 0.4.5
+
+2024-01-03 09:04:51.609 [info] Using net-http-persistent 4.0.1
+
+2024-01-03 09:04:51.609 [info] Using next_rails 1.0.4
+
+2024-01-03 09:04:51.609 [info] Using ruby-graphviz 1.2.5
+
+2024-01-03 09:04:51.609 [info] Using psych 5.1.2
+
+2024-01-03 09:04:51.609 [info] Using reline 0.4.1
+
+2024-01-03 09:04:51.609 [info] Using faraday 2.5.2
+
+2024-01-03 09:04:51.609 [info] Using mime-types 3.4.1
+
+2024-01-03 09:04:51.609 [info] Using unf 0.1.4
+
+2024-01-03 09:04:51.609 [info] Using rqrcode 2.1.1
+Using graphql-guard 2.0.0
+
+2024-01-03 09:04:51.610 [info] Using yard 0.9.28
+
+2024-01-03 09:04:51.610 [info] Using parallel_tests 4.1.0
+
+2024-01-03 09:04:51.610 [info] Using representable 3.2.0
+
+2024-01-03 09:04:51.610 [info] Using lazy_high_charts 1.6.1 from https://github.com/michelson/lazy_high_charts (at master@54f4b6d)
+
+2024-01-03 09:04:51.610 [info] Using httpi 2.5.0
+
+2024-01-03 09:04:51.610 [info] Using recaptcha 5.9.0
+
+2024-01-03 09:04:51.610 [info] Using sendgrid 1.2.4
+
+2024-01-03 09:04:51.610 [info] Using terminal-table 3.0.2
+
+2024-01-03 09:04:51.610 [info] Using prawn 2.4.0
+
+2024-01-03 09:04:51.610 [info] Using progress_bar 1.3.3
+
+2024-01-03 09:04:51.610 [info] Using rack-user_agent 0.5.3
+
+2024-01-03 09:04:51.698 [info] Fetching sorbet-runtime 0.5.11170 (was 0.5.11164)
+
+2024-01-03 09:04:51.700 [info] Using activesupport 7.0.6
+Using loofah 2.21.3
+
+2024-01-03 09:04:51.796 [info] Using net-imap 0.3.7
+Using net-pop 0.1.2
+Using net-smtp 0.3.3
+
+2024-01-03 09:04:51.830 [info] Using aws-sdk-core 3.130.0
+Using akami 1.3.1
+
+2024-01-03 09:04:51.833 [info] Using xpath 3.2.0
+Using css_parser 1.11.0
+Using rdoc 6.6.2
+Using domain_name 0.5.20190701
+
+2024-01-03 09:04:51.834 [info] Using oauth2 1.4.9
+Using launchy 2.5.0
+Using faker 2.20.0
+Using fog-core 2.3.0
+Using signet 0.17.0
+
+2024-01-03 09:04:51.870 [info] Using rubocop-ast 1.16.0
+Using i18n-js 3.9.1
+
+2024-01-03 09:04:51.870 [info] Using mimemagic 0.4.3
+Using money 6.16.0
+
+2024-01-03 09:04:51.870 [info] Using oga 3.4
+
+2024-01-03 09:04:51.870 [info] Using handlebars_assets 0.23.9
+
+2024-01-03 09:04:51.870 [info] Using prawn-icon 3.1.0
+
+2024-01-03 09:04:51.871 [info] Using prawn-table 0.2.2
+
+2024-01-03 09:04:51.900 [info] Using roo 2.8.3
+Using spreadsheet 1.3.0
+Using rspec-core 3.10.2
+
+2024-01-03 09:04:51.900 [info] Using rspec-expectations 3.10.2
+Using rspec-mocks 3.10.3
+Using sanitize 6.0.0
+Using wasabi 3.7.0
+Using scout_apm 5.1.1
+
+2024-01-03 09:04:51.900 [info] Using signer 1.10.0
+Using simplecov 0.21.2
+
+2024-01-03 09:04:51.901 [info] Using tzinfo-data 1.2023.3
+Using webmock 3.18.1
+Using will_paginate-bootstrap 1.0.2
+
+2024-01-03 09:04:51.901 [info] Using json-jwt 1.13.0
+Using view_component 2.77.0
+Using pagy 5.10.1
+
+2024-01-03 09:04:51.901 [info] Using shoulda-matchers 5.3.0
+Using wicked_pdf 2.7.0
+
+2024-01-03 09:04:51.901 [info] Using rails-dom-testing 2.2.0
+Using globalid 1.1.0
+Using activemodel 7.0.6
+Using bullet 7.0.7
+
+2024-01-03 09:04:51.901 [info] Using delayed_job 4.1.10
+
+2024-01-03 09:04:51.901 [info] Using factory_bot 6.2.0
+
+2024-01-03 09:04:51.901 [info] Using rails-html-sanitizer 1.6.0
+
+2024-01-03 09:04:51.901 [info] Using haml 5.2.2
+
+2024-01-03 09:04:51.901 [info] Using irb 1.11.0
+
+2024-01-03 09:04:51.901 [info] Using dropbox_api 0.1.21
+
+2024-01-03 09:04:51.901 [info] Using fog-json 1.2.0
+
+2024-01-03 09:04:51.934 [info] Using fog-xml 0.1.4
+Using numbers_and_words 0.11.11
+Using omniauth 2.0.4
+Using http-cookie 1.0.5
+Using prawn-qrcode 0.5.2
+Using capybara 3.36.0
+Using googleauth 1.2.0
+
+2024-01-03 09:04:51.935 [info] Using rubocop 1.26.0
+Using monetize 1.12.0
+
+2024-01-03 09:04:51.935 [info] Using prawn-html 0.7.1
+
+2024-01-03 09:04:52.122 [info] Using actionview 7.0.6
+Using activejob 7.0.6
+Using activerecord 7.0.6
+Using activemodel-serializers-xml 1.0.2
+
+2024-01-03 09:04:52.123 [info] Using prawn-markup 1.0.0
+Using caxlsx 3.2.0
+
+2024-01-03 09:04:52.135 [info] Using debug 1.9.1
+
+2024-01-03 09:04:52.135 [info] Using premailer 1.15.0
+Using roo-xls 1.2.0
+
+2024-01-03 09:04:52.135 [info] Using rspec 3.10.0
+
+2024-01-03 09:04:52.164 [info] Using rspec-activemodel-mocks 1.1.0
+Using rspec_junit_formatter 0.5.1
+
+2024-01-03 09:04:52.168 [info] Using sassc 2.4.0
+
+2024-01-03 09:04:52.168 [info] Using ruby-vips 2.1.4
+Using google-apis-core 0.9.0
+
+2024-01-03 09:04:52.178 [info] Using savon 2.12.1
+
+2024-01-03 09:04:52.178 [info] Using rb-inotify 0.10.1
+
+2024-01-03 09:04:52.178 [info] Using rubocop-faker 1.1.0
+
+2024-01-03 09:04:52.186 [info] Using haml_lint 0.40.0
+
+2024-01-03 09:04:52.187 [info] Using delayed_job_active_record 4.1.7
+Using fog-aws 3.13.0
+
+2024-01-03 09:04:52.187 [info] Using friendly_id 5.4.2
+
+2024-01-03 09:04:52.187 [info] Using jbuilder 2.11.5
+Using paper_trail 12.3.0
+
+2024-01-03 09:04:52.199 [info] Using rubocop-graphql 0.13.0
+
+2024-01-03 09:04:52.202 [info] Using prawn-rails 1.4.2
+
+2024-01-03 09:04:52.204 [info] Using rails-erd 1.6.1
+
+2024-01-03 09:04:52.207 [info] Using ransack 2.6.0
+Using actionpack 7.0.6
+Using active_record_union 1.3.0
+Using active_type 2.1.1
+
+2024-01-03 09:04:52.219 [info] Using activerecord-import 1.3.0
+Using annotate 3.2.0
+
+2024-01-03 09:04:52.219 [info] Using database_cleaner-active_record 2.0.1
+
+2024-01-03 09:04:52.219 [info] Using mechanize 2.8.5
+Using axlsx_styler 1.1.0
+Using bootstrap-sass 3.4.1
+
+2024-01-03 09:04:52.219 [info] Using image_processing 1.12.2
+Using omniauth-oauth2 1.7.2
+
+2024-01-03 09:04:52.234 [info] Using better_html 2.0.2
+Using google-apis-discovery_v1 0.12.0
+Using listen 3.7.1
+
+2024-01-03 09:04:52.234 [info] Using actioncable 7.0.6
+
+2024-01-03 09:04:52.234 [info] Using railties 7.0.6
+
+2024-01-03 09:04:52.234 [info] Using caxlsx_rails 0.6.3
+
+2024-01-03 09:04:52.234 [info] Using draper 4.0.2
+
+2024-01-03 09:04:52.234 [info] Using sprockets-rails 3.4.2
+
+2024-01-03 09:04:52.235 [info] Using rails-controller-testing 1.0.5
+
+2024-01-03 09:04:52.242 [info] Using activestorage 7.0.6
+Using carrierwave 2.2.2
+Using scrapper-edifito 1.3.17 from https://github.com/ComunidadFeliz/scraper-edifito.git (at main@fa38070)
+
+2024-01-03 09:04:52.242 [info] Using aws-sdk-sqs 1.51.0
+Using activerecord-session_store 2.0.0
+Using aws-sdk-autoscaling 1.78.0
+
+2024-01-03 09:04:52.243 [info] Using aws-sdk-dynamodb 1.74.0
+
+2024-01-03 09:04:52.243 [info] Using aws-sdk-ec2 1.303.0
+Using aws-sdk-kms 1.55.0
+
+2024-01-03 09:04:52.243 [info] Using jquery-rails 4.4.0
+
+2024-01-03 09:04:52.250 [info] Using momentjs-rails 2.29.1.1
+
+2024-01-03 09:04:52.250 [info] Using coffee-rails 5.0.0
+
+2024-01-03 09:04:52.250 [info] Using dotenv-rails 2.8.1
+Using factory_bot_rails 6.2.0
+
+2024-01-03 09:04:52.250 [info] Using font-awesome-rails 4.7.0.8
+
+2024-01-03 09:04:52.250 [info] Using jquery-ui-rails 6.0.1
+Using google-apis-generator 0.10.0
+
+2024-01-03 09:04:52.250 [info] Using graphiql-rails 1.7.0
+
+2024-01-03 09:04:52.251 [info] Using highcharts-rails 6.0.3
+
+2024-01-03 09:04:52.251 [info] Using rails-i18n 7.0.7
+
+2024-01-03 09:04:52.251 [info] Using js-routes 2.2.3
+
+2024-01-03 09:04:52.251 [info] Using lookbook 1.4.1
+
+2024-01-03 09:04:52.251 [info] Using money-rails 1.15.0
+
+2024-01-03 09:04:52.259 [info] Using aws-sdk-sns 1.53.0
+Using haml-rails 2.1.0
+Using omniauth-facebook 9.0.0
+
+2024-01-03 09:04:52.261 [info] Using react-rails 2.6.1
+
+2024-01-03 09:04:52.262 [info] Using omniauth-google-oauth2 1.0.1
+
+2024-01-03 09:04:52.263 [info] Using responders 3.0.1
+Using rspec-rails 5.0.0
+
+2024-01-03 09:04:52.263 [info] Using rut_validation 1.1.0
+
+2024-01-03 09:04:52.266 [info] Using sassc-rails 2.1.2
+
+2024-01-03 09:04:52.266 [info] Using turbo-rails 1.4.0
+
+2024-01-03 09:04:52.266 [info] Using web-console 4.2.0
+
+2024-01-03 09:04:52.266 [info] Using webpacker 5.4.3
+
+2024-01-03 09:04:52.266 [info] Using aws-sdk-s3 1.113.0
+
+2024-01-03 09:04:52.269 [info] Using tinymce-rails 6.5.0
+Using bootstrap3-datetimepicker-rails 4.17.47
+
+2024-01-03 09:04:52.269 [info] Using fullcalendar-rails 3.9.0.0
+Using google-api-client 0.53.0
+
+2024-01-03 09:04:52.269 [info] Using i18n-tasks 1.0.12
+
+2024-01-03 09:04:52.274 [info] Using bootstrap-validator-rails 0.5.3
+
+2024-01-03 09:04:52.278 [info] Using actiontext 7.0.6
+
+2024-01-03 09:04:52.281 [info] Installing sorbet-runtime 0.5.11170 (was 0.5.11164)
+
+2024-01-03 09:04:52.282 [info] Using mail 2.8.1
+
+2024-01-03 09:04:52.285 [info] Using actionmailbox 7.0.6
+
+2024-01-03 09:04:52.287 [info] Using actionmailer 7.0.6
+Using email_spec 2.2.0
+Using tinymce-rails-langs 6.20230529
+
+2024-01-03 09:04:52.288 [info] Using rails 7.0.6
+
+2024-01-03 09:04:52.288 [info] Using premailer-rails 1.11.1
+
+2024-01-03 09:04:52.289 [info] Using active_elastic_job 3.2.0
+
+2024-01-03 09:04:52.289 [info] Using google-authenticator-rails 3.2.1
+Using rename 1.0.8
+
+2024-01-03 09:04:52.304 [info] Using ruby-lsp 0.13.2
+
+2024-01-03 09:04:52.319 [info] Bundler attempted to update ruby-lsp but its version stayed the same
+Bundler attempted to update debug but its version stayed the same
+Bundle updated!
+
+2024-01-03 09:04:52.320 [info] 1 installed gem you directly depend on is looking for funding.
+  Run `bundle fund` for details
+
+2024-01-03 09:04:53.540 [info] Starting Ruby LSP v0.13.2...
+
+2024-01-03 09:04:53.550 [info] Ruby LSP is ready
+
+2024-01-03 09:22:16.838 [info] Warning: obsolete parameter `ExcludedMethods` (for `Metrics/BlockLength`) found in .rubocop.yml
+`ExcludedMethods` has been renamed to `IgnoredMethods`.
+
+2024-01-03 09:22:16.840 [info] The following cops were added to RuboCop, but are not configured. Please set Enabled to either `true` or `false` in your `.rubocop.yml` file.
+
+Please also note that you can opt-in to new cops by default by adding this to your config:
+  AllCops:
+    NewCops: enable
+Gemspec/DateAssignment: # new in 1.10
+  Enabled: true
+Gemspec/RequireMFA: # new in 1.23
+  Enabled: true
+Layout/LineEndStringConcatenationIndentation: # new in 1.18
+  Enabled: true
+Layout/SpaceBeforeBrackets: # new in 1.7
+  Enabled: true
+Lint/AmbiguousAssignment: # new in 1.7
+  Enabled: true
+Lint/AmbiguousOperatorPrecedence: # new in 1.21
+  Enabled: true
+Lint/AmbiguousRange: # new in 1.19
+  Enabled: true
+Lint/DeprecatedConstants: # new in 1.8
+  Enabled: true
+Lint/DuplicateBranch: # new in 1.3
+  Enabled: true
+Lint/DuplicateRegexpCharacterClassElement: # new in 1.1
+  Enabled: true
+Lint/EmptyBlock: # new in 1.1
+  Enabled: true
+Lint/EmptyClass: # new in 1.3
+  Enabled: true
+Lint/EmptyInPattern: # new in 1.16
+  Enabled: true
+Lint/IncompatibleIoSelectWithFiberScheduler: # new in 1.21
+  Enabled: true
+Lint/LambdaWithoutLiteralBlock: # new in 1.8
+  Enabled: true
+Lint/NoReturnInBeginEndBlocks: # new in 1.2
+  Enabled: true
+Lint/NumberedParameterAssignment: # new in 1.9
+  Enabled: true
+Lint/OrAssignmentToConstant: # new in 1.9
+  Enabled: true
+Lint/RedundantDirGlobSort: # new in 1.8
+  Enabled: true
+Lint/RequireRelativeSelfPath: # new in 1.22
+  Enabled: true
+Lint/SymbolConversion: # new in 1.9
+  Enabled: true
+Lint/ToEnumArguments: # new in 1.1
+  Enabled: true
+Lint/TripleQuotes: # new in 1.9
+  Enabled: true
+Lint/UnexpectedBlockArity: # new in 1.5
+  Enabled: true
+Lint/UnmodifiedReduceAccumulator: # new in 1.1
+  Enabled: true
+Lint/UselessRuby2Keywords: # new in 1.23
+  Enabled: true
+Naming/BlockForwarding: # new in 1.24
+  Enabled: true
+Security/IoMethods: # new in 1.22
+  Enabled: true
+Style/ArgumentsForwarding: # new in 1.1
+  Enabled: true
+Style/CollectionCompact: # new in 1.2
+  Enabled: true
+Style/DocumentDynamicEvalDefinition: # new in 1.1
+  Enabled: true
+Style/EndlessMethod: # new in 1.8
+  Enabled: true
+Style/FileRead: # new in 1.24
+  Enabled: true
+Style/FileWrite: # new in 1.24
+  Enabled: true
+Style/HashConversion: # new in 1.10
+  Enabled: true
+Style/HashExcept: # new in 1.7
+  Enabled: true
+Style/IfWithBooleanLiteralBranches: # new in 1.9
+  Enabled: true
+Style/InPatternThen: # new in 1.16
+  Enabled: true
+Style/MapToHash: # new in 1.24
+  Enabled: true
+Style/MultilineInPatternThen: # new in 1.16
+  Enabled: true
+Style/NegatedIfElseCondition: # new in 1.2
+  Enabled: true
+Style/NestedFileDirname: # new in 1.26
+  Enabled: true
+Style/NilLambda: # new in 1.3
+  Enabled: true
+Style/NumberedParameters: # new in 1.22
+  Enabled: true
+Style/NumberedParametersLimit: # new in 1.22
+  Enabled: true
+Style/OpenStructUse: # new in 1.23
+  Enabled: true
+Style/QuotedSymbols: # new in 1.16
+
+2024-01-03 09:22:16.840 [info]   Enabled: true
+Style/RedundantArgument: # new in 1.4
+  Enabled: true
+Style/RedundantSelfAssignmentBranch: # new in 1.19
+  Enabled: true
+Style/SelectByRegexp: # new in 1.22
+  Enabled: true
+Style/StringChars: # new in 1.12
+  Enabled: true
+Style/SwapValues: # new in 1.1
+  Enabled: true
+For more information: https://docs.rubocop.org/rubocop/versioning.html
+
+2024-01-03 16:54:38.276 [info] Shutting down Ruby LSP...
+

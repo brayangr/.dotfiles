@@ -1,0 +1,165 @@
+2023-12-28 09:16:56.701 [info] Extension host with pid 4914 started
+2023-12-28 09:16:56.701 [info] Skipping acquiring lock for /home/brayan/.config/Code/User/workspaceStorage/3e5e6d6f7e9976681a79a6f5de822ba8.
+2023-12-28 09:16:56.881 [info] ExtensionService#_doActivateExtension Shopify.ruby-lsp, startup: false, activationEvent: 'onLanguage:ruby'
+2023-12-28 09:16:56.902 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-12-28 09:16:57.762 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-12-28 09:16:57.764 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: true, activationEvent: '*'
+2023-12-28 09:16:57.782 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2023-12-28 09:16:57.869 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-12-28 09:16:57.894 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-12-28 09:16:58.081 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-12-28 09:17:06.579 [info] Eager extensions activated
+2023-12-28 09:17:06.584 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-12-28 09:17:06.585 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-12-28 09:17:06.590 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2023-12-28 09:17:06.618 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2023-12-28 09:23:44.083 [warning] TextEditor is closed/disposed
+2023-12-28 09:23:47.091 [warning] TextEditor is closed/disposed
+2023-12-28 09:23:52.449 [warning] TextEditor is closed/disposed
+2023-12-28 09:23:54.245 [warning] TextEditor is closed/disposed
+2023-12-28 09:37:06.360 [warning] TextEditor is closed/disposed
+2023-12-28 09:45:46.306 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2023-12-28 09:56:30.017 [warning] TextEditor is closed/disposed
+2023-12-28 10:52:23.825 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-12-28 10:52:23.906 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-12-28 10:52:56.115 [warning] TextEditor is closed/disposed
+2023-12-28 10:56:25.364 [warning] TextEditor is closed/disposed
+2023-12-28 10:56:32.458 [warning] TextEditor is closed/disposed
+2023-12-28 10:56:39.309 [warning] TextEditor is closed/disposed
+2023-12-28 11:03:02.523 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:03:10.280 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:03:10.896 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:03:36.565 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:03:37.337 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:03:37.662 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:06:32.936 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:7,$model31)
+2023-12-28 11:14:47.632 [warning] TextEditor is closed/disposed
+2023-12-28 11:14:50.750 [warning] TextEditor is closed/disposed
+2023-12-28 11:18:11.120 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:18:47.809 [warning] TextEditor is closed/disposed
+2023-12-28 11:19:00.644 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:19:08.670 [warning] TextEditor is closed/disposed
+2023-12-28 11:19:11.740 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 11:19:18.170 [warning] TextEditor is closed/disposed
+2023-12-28 11:19:28.722 [warning] TextEditor is closed/disposed
+2023-12-28 11:20:50.024 [warning] TextEditor is closed/disposed
+2023-12-28 11:20:51.247 [warning] TextEditor is closed/disposed
+2023-12-28 11:20:52.027 [warning] TextEditor is closed/disposed
+2023-12-28 11:20:52.875 [warning] TextEditor is closed/disposed
+2023-12-28 11:20:54.247 [warning] TextEditor is closed/disposed
+2023-12-28 11:21:54.627 [warning] TextEditor is closed/disposed
+2023-12-28 11:21:59.190 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:06.596 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:07.870 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:11.406 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:23.366 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:36.422 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:43.902 [warning] TextEditor is closed/disposed
+2023-12-28 11:22:54.198 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:01.696 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:03.583 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:06.850 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:09.872 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:12.477 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:14.210 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:14.994 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:19.042 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:22.339 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:24.133 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:28.016 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:32.130 [warning] TextEditor is closed/disposed
+2023-12-28 11:23:33.120 [warning] TextEditor is closed/disposed
+2023-12-28 11:24:41.021 [warning] TextEditor is closed/disposed
+2023-12-28 11:24:43.850 [warning] TextEditor is closed/disposed
+2023-12-28 11:25:01.599 [warning] TextEditor is closed/disposed
+2023-12-28 11:25:48.480 [warning] TextEditor is closed/disposed
+2023-12-28 11:25:49.675 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:16.339 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:17.478 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:18.197 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:18.794 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:18.847 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:10,$model112)
+2023-12-28 11:26:20.039 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:20.900 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:26.751 [warning] TextEditor is closed/disposed
+2023-12-28 11:26:45.811 [warning] TextEditor is closed/disposed
+2023-12-28 11:28:08.385 [warning] TextEditor is closed/disposed
+2023-12-28 11:31:44.957 [warning] TextEditor is closed/disposed
+2023-12-28 11:32:29.055 [warning] TextEditor is closed/disposed
+2023-12-28 13:14:39.165 [warning] TextEditor is closed/disposed
+2023-12-28 13:24:37.154 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 13:24:38.673 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 13:53:13.002 [warning] TextEditor is closed/disposed
+2023-12-28 14:02:36.946 [warning] TextEditor is closed/disposed
+2023-12-28 14:02:39.828 [warning] TextEditor is closed/disposed
+2023-12-28 14:02:42.457 [warning] TextEditor is closed/disposed
+2023-12-28 14:02:44.889 [warning] TextEditor is closed/disposed
+2023-12-28 14:02:46.691 [warning] TextEditor is closed/disposed
+2023-12-28 14:13:00.913 [warning] TextEditor is closed/disposed
+2023-12-28 14:13:28.273 [warning] TextEditor is closed/disposed
+2023-12-28 14:36:14.398 [warning] TextEditor is closed/disposed
+2023-12-28 14:36:27.105 [warning] TextEditor is closed/disposed
+2023-12-28 14:36:32.758 [warning] TextEditor is closed/disposed
+2023-12-28 14:36:34.923 [warning] TextEditor is closed/disposed
+2023-12-28 14:36:36.964 [warning] TextEditor is closed/disposed
+2023-12-28 14:37:12.724 [warning] TextEditor is closed/disposed
+2023-12-28 14:37:14.276 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:10,$model98)
+2023-12-28 14:37:21.359 [warning] TextEditor is closed/disposed
+2023-12-28 14:37:32.945 [warning] TextEditor is closed/disposed
+2023-12-28 14:37:44.229 [warning] TextEditor is closed/disposed
+2023-12-28 14:37:58.675 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:00.939 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:04.707 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:17.251 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:23.980 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:27.466 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:28.152 [warning] TextEditor is closed/disposed
+2023-12-28 14:38:39.064 [warning] TextEditor is closed/disposed
+2023-12-28 14:39:14.951 [warning] TextEditor is closed/disposed
+2023-12-28 14:39:21.230 [warning] TextEditor is closed/disposed
+2023-12-28 14:39:32.502 [warning] TextEditor is closed/disposed
+2023-12-28 14:39:55.644 [warning] TextEditor is closed/disposed
+2023-12-28 14:42:48.758 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 14:43:03.187 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 15:08:59.222 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 15:09:04.994 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:09:04.677 [warning] TextEditor is closed/disposed
+2023-12-28 16:09:50.292 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:18:20.497 [warning] TextEditor is closed/disposed
+2023-12-28 16:18:40.828 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:19:32.595 [warning] TextEditor is closed/disposed
+2023-12-28 16:19:39.884 [warning] TextEditor is closed/disposed
+2023-12-28 16:19:41.252 [warning] TextEditor is closed/disposed
+2023-12-28 16:21:08.400 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:21:11.470 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:21:11.795 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:21:12.108 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:21:13.638 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:21:23.749 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:22:11.786 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:22:18.459 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:24:26.059 [warning] TextEditor is closed/disposed
+2023-12-28 16:29:52.816 [warning] TextEditor is closed/disposed
+2023-12-28 16:30:19.596 [warning] TextEditor is closed/disposed
+2023-12-28 16:39:29.530 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:39:36.566 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:41:18.769 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:41:25.390 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:41:40.165 [warning] TextEditor is closed/disposed
+2023-12-28 16:44:35.263 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:45:53.435 [warning] TextEditor is closed/disposed
+2023-12-28 16:46:15.094 [warning] TextEditor is closed/disposed
+2023-12-28 16:47:35.448 [warning] TextEditor is closed/disposed
+2023-12-28 16:48:29.022 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:48:31.915 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:53:48.381 [warning] TextEditor is closed/disposed
+2023-12-28 16:53:58.547 [warning] TextEditor is closed/disposed
+2023-12-28 16:54:34.775 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:54:35.590 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:54:39.311 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:54:40.121 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:55:06.384 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:55:07.057 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:55:08.085 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:55:09.323 [warning] Shopify.ruby-lsp - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.extract'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2023-12-28 16:57:09.823 [warning] TextEditor is closed/disposed

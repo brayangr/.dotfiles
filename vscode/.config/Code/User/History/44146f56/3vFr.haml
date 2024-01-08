@@ -1,0 +1,66 @@
+:ruby
+  def set_form_validation_params(index)
+    {
+      call: {
+        validation: 'fileExtension',
+        validation_params: {
+          permitted: ['doc', 'docx', 'gif', 'img', 'jpg', 'jpeg', 'pdf', 'png', 'ppt', 'pptx', 'rar', 'txt', 'xls', 'xlsx', 'zip'],
+          filename_name: "assets[#{index}][document]"
+          },
+        warning_params: {
+          input_id: "input_#{index}",
+          input_button_id: "#{index}-input-button",
+          warning_id: "#{index}-warning"
+        }
+      }
+    }
+  end
+
+  def input_fields_to_remove(index)
+    ids = []
+    (1..index-1).each do |i|
+      ids << "input_#{i}"
+    end
+    ids
+  end
+
+=fields_for asset do |f_asset|
+  .row.additional_asset{id: "additional_asset_#{@index}"}
+    .col-xs-6
+      .input-group
+        %input.form-control{type: "text", id: "input_#{@index}" }
+
+        %span.input-group-btn{ data: { action: 'input->form-validation#call', params: set_form_validation_params(@index).to_json }}
+          .btn-file.btn.btn-default{id: "#{@index}-input-button"}
+            = t('views.commons.examine')
+            = f_asset.file_field :document, class: 'form-control', 'data-index'=> @index, type: :file, name: "assets[#{@index}][document]"
+      %small.warning{id: "#{@index}-warning"}= I18n.t('views.service_billings.form.extra_documents_warning')
+    -if @index == 0
+      .col-xs-6.supporting
+        .field
+          = link_to new_asset_path(index: @index, documentable_id: documentable_id), format: :js, remote: true, class: 'no-underline' do
+            .btn.btn-default.addAdditionalAsset= t('views.service_billings.form.assets.add')
+          - params = set_form_validation_params(0)
+          - params[:validation] = 'refresh'
+          - params[:remove] = input_fields_to_remove(10)
+          .btn.btn-default.deleteAdditionalAsset{ data: { action: 'click->form-validation#call click->form-validation#removeInputField', params: params.to_json }}= t('views.service_billings.form.assets.delete_all')
+    -elsif @index > 0
+      .col-xs-6
+        .field
+          - params = set_form_validation_params(@index)
+          - params[:remove] = ["input_#{@index}"]
+          .btn.btn-default.deleteAdditionalAsset{ data: { action: 'mouseup->form-validation#removeInputField', params: params.to_json }}= t('views.service_billings.form.assets.delete')
+
+:javascript
+  $(document).ready(function(){
+    $('.deleteAdditionalAsset').on('click', function(){
+      if ( parseInt("#{@index}") > 0 ){
+        $(this).parents("#additional_asset_#{@index}").remove();
+        $('.additional_assets a').prop('href', "/archivos/new?index=#{@index -1 }");
+      }
+      else{
+        $("#input_#{@index}").prop('value','');
+        $('div.additional_asset:not([id="additional_asset_0"])').remove();
+      }
+    });
+  });

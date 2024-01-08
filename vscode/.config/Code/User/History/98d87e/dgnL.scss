@@ -1,0 +1,20 @@
+@import "coloresw8";
+
+.bills-summary {
+  .red-circle {
+    color: $warning-red;
+  }
+
+  .blue-circle {
+    color: $primary-btn-color;
+  }
+
+  .black-circle {
+    color: $cf-light-black;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}

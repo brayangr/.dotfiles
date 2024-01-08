@@ -1,0 +1,176 @@
+= stylesheet_link_tag '//cdn.jsdelivr.net/gh/davidstutz/bootstrap-multiselect@76ad8ac05a1a89f538ac2b5d5e73eb9662475590/dist/css/bootstrap-multiselect.css'
+= javascript_include_tag '//cdn.jsdelivr.net/gh/davidstutz/bootstrap-multiselect@76ad8ac05a1a89f538ac2b5d5e73eb9662475590/dist/js/bootstrap-multiselect.js'
+.mainContent.panelAdmin.copropietarios{ 'data-controller': 'request-property-users' }
+  = render(HeaderBoxComponent.new(id:'property-user-header', title: t('activerecord.models.property_user.other'))) do |header|
+    - header.with_buttons_section do
+      - if can?(:index, PropertyUserRequest)
+        - tooltip = @user_requests_size.positive? ? { toggle: 'tooltip', title: t('views.property_users.index.tooltip'), placement: 'bottom' } : {}
+        =link_to property_user_requests_path do
+          .btn.btn-xs.pull-right{
+              class: "#{ @user_requests_size.positive? ? 'btn-yellow-user-requests' : 'btn-default' }",
+              data: tooltip
+            }
+            .icon.fa.fa-users
+            = string_button_user_requests(count: @user_requests_size, limit: Constants::PropertyUser::MAX_USER_REQUESTS)
+      -if can?(:index, Property)
+        =link_to properties_path do
+          .btn.btn-default.btn-xs.pull-right
+            .icon.fa.fa-list
+            = t('activerecord.models.property.other')
+      -if can?(:index, Transfer)
+        =link_to transfers_path do
+          .btn.btn-default.btn-xs.pull-right
+            .icon.fa.fa-exchange
+            Transferencias
+      - if @uses_period_control
+        #btn-tutorial.btn.btn-default.btn-xs.pull-right{ data: { target: '#tutorial-modal', toggle: :modal }, type: :button }
+          %i.fa.fa-graduation-cap
+          = t('views.tutorial.name')
+        = render partial: '/layouts/youtube_modal', locals: { yt_video_id: t('views.tutorial.property_users.yt_video_id'), title: t('views.tutorial.name') }
+
+  = render(FinderComponent.new(**@finder_params))
+
+  .clear
+    %br
+  - unless @status == 'Inactivo'
+    .row.title-container.residents-actions
+      .col-sm-6
+        %h1.title
+          %span{data: { intro: t('views.property_users.index.intro2'), position: :bottom} }="#{t('activerecord.models.property_user.other')} actuales"
+      .col-sm-6.d-inline-flex.row-reverse
+        %span.dropdown.download-options-btn
+          %button.btn.btn-default.btn-xs.pull-right{ id: 'dropdown_menu_options', data: { toggle: :dropdown } }
+            .icon.fa.fa-download
+            = t(:download)
+          .dropdown-menu.dropdown-menu-right.property-users-download-dropdown
+            = link_to property_users_path(:xlsx) do
+              %div{ class: 'dropdown-item' }= t('views.property_users.index.download_residents_excel')
+            - if can?(:property_user_validations_zip, current_community) && current_community.property_user_validation_enabled?
+              = link_to property_user_validations_zip_community_path(current_community.id) do
+                %div{ class: 'dropdown-item' }= t('views.property_users.index.download_property_validations_excel')
+        - if (can?(:edit, PropertyUser) && can?(:import_data, ExcelUpload)) || @current_user.admin?
+          = link_to import_data_path('Copropietarios') do
+            .btn.btn-default.btn-xs.pull-right{data: { intro: t('views.property_users.index.import_from_excel'), position: :bottom} }
+              .icon.fa.fa-cloud-upload
+              = t('excels.commons.dropdown_import')
+        - if (can? :group_all, PropertyUser) && @property_users_to_group.exists? && @ass_enabled
+          = link_to group_all_property_users_path do
+            .btn.btn-light-blue.btn-xs.pull-right
+              .icon.fa.fa-cubes
+              ="Agrupar todos los #{t('activerecord.models.property_user.other').downcase}"
+        - if can? :setup_default_password, PropertyUser
+          = link_to setup_default_password_property_users_path do
+            .btn.btn-light-blue.btn-xs.pull-right{data: { intro: t('views.property_users.index.setup_default_password'), position: :bottom} }
+              .icon.fa.fa-list
+              = t('views.property_users.index.setup_default_password')
+        %label#show-pending.disabled{ data: { 'request-property-users-target': 'checkbox' } }
+          %input{ type: "checkbox", checked: (params[:show_pending] == '1'), data: { action: 'input->request-property-users#filterPendings'} }
+          = t('views.property_users.index.show_pending_requests')
+    -if @users.exists?
+      .row#users_grid{ 'data-columns' => '' }
+      = render partial: 'user_profile', collection: @users, as: :user,
+        locals: { active: true,
+                  grouped_property_users_not_limited: @property_users_grouped_not_limited,
+                  latest_bills: @latest_bills,
+                  property_users_not_limited: @property_users_not_limited,
+                  property_users_requests_sizes: @property_users_requests_sizes,
+                  profiles: @profiles,
+                  view_limit: @view_limit }
+
+      .col-xs-12
+        = automated_paginater(@users, 'active_page')#, renderer: BootstrapPagination::Rails)
+    -else
+      .alert.alert-danger No hay resultados para este criterio de búsqueda
+
+  .clear
+    %br
+  - unless @status == 'Activo' || current_community.get_setting_value('show_inactive_property_users').zero?
+    %h1.title= "#{t('activerecord.models.property_user.other')} pasados"
+    -if @inactive_users.exists?
+      .row#users_grid2{ 'data-columns' => '' }
+      = render partial: 'user_profile', collection: @inactive_users.to_a.uniq, as: :user,
+        locals: { active: false,
+                  grouped_property_users_not_limited: @inactive_property_users_grouped_not_limited,
+                  latest_bills: @latest_bills,
+                  property_users_not_limited: @inactive_property_users_not_limited,
+                  view_limit: @view_limit,
+                  profiles: @profiles }
+      .col-xs-12
+        = automated_paginater(@inactive_users, 'inactive_page')
+    -else
+      .alert.alert-danger No hay resultados para este criterio de búsqueda
+
+= javascript_include_tag 'masonry.pkgd.min.js'
+
+:javascript
+  $(document).ready(function(){
+    $('#users_grid').masonry({
+      itemSelector: '.users_grid_item'
+    });
+    $('#users_grid2').masonry({
+      itemSelector: '.users_grid_item'
+    });
+    $('.masonry-resize').click(function(){
+      $('#users_grid').masonry();
+      $('#users_grid2').masonry();
+    });
+  });
+
+  function get_subproperties_list(obj, can_hide){
+    var property_options_container = $(obj).closest('.property_options_container');
+    var loader_content = property_options_container.find('.loader-content');
+    var subproperties_container = property_options_container.find('.subproperties_container');
+    var url = $(obj).attr('href');
+    if (url && (subproperties_container.children().length == 0 || !can_hide)){
+      loader_content.show();
+      $.ajax({
+        type: 'get',
+        url: url,
+        success: function(data){
+          subproperties_container.html(data)
+          subproperties_container.find('.ajax-pagination').on('click', 'li', function (event) {
+            get_subproperties_list(event.target, false);
+          });
+          loader_content.hide();
+          $('#users_grid').masonry();
+          $('#users_grid2').masonry();
+        },
+        error: function(response) {
+          alert("#{t('messages.errors.property_users.getting_associated_properties')}");
+          loader_content.hide();
+        }
+      });
+      if(can_hide){
+        property_options_container.find('.list_subproperties').toggle();
+      }
+    }
+    else{
+      property_options_container.find('.list_subproperties').toggle();
+      subproperties_container.toggle();
+    }
+    $('#users_grid').masonry();
+    $('#users_grid2').masonry();
+  }
+
+= render 'modals/destroy_dialog',
+          locals: { main_question:    I18n.t('views.property_users.delete_documents_modal.header'),
+                    content_text:     I18n.t('views.property_users.delete_documents_modal.content'),
+                    next_button_text: I18n.t('views.property_users.delete_documents_modal.button') }
+
+:javascript
+  // Stimulus refactor pending
+  let deleteDocumentsModal = (path, doc) => {
+    event.preventDefault();
+    event.stopPropagation();
+    params = {
+      path: path,
+      doc: doc,
+      isAjaxRequest: true,
+      ajaxMethodToReturn: 'responseOnDeleteDocuments'
+    };
+    handleShowDestroyDialogModal(params);
+  }
+
+  function responseOnDeleteDocuments(data) {
+    window.location.replace(data['url']);
+  }

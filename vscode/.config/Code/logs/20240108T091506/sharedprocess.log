@@ -1,0 +1,15 @@
+2024-01-08 09:15:11.502 [info] Getting Manifest... shopify.ruby-lsp
+2024-01-08 09:15:12.056 [info] Installing extension: shopify.ruby-lsp
+2024-01-08 09:15:15.236 [info] Extension signature is verified: shopify.ruby-lsp
+2024-01-08 09:15:15.266 [info] Extracted extension to file:///home/brayan/.vscode/extensions/shopify.ruby-lsp-0.5.5: shopify.ruby-lsp
+2024-01-08 09:15:15.270 [info] Renamed to /home/brayan/.vscode/extensions/shopify.ruby-lsp-0.5.5
+2024-01-08 09:15:15.271 [info] Extracting extension completed. shopify.ruby-lsp
+2024-01-08 09:15:15.277 [info] Extension installed successfully: shopify.ruby-lsp
+2024-01-08 09:15:15.278 [info] Marked extension as uninstalled shopify.ruby-lsp-0.5.4
+2024-01-08 09:15:15.351 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/brayan/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/brayan/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)

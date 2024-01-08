@@ -1,0 +1,19 @@
+= render partial: 'index_header'
+
+.div{ data: { controller: 'salary-payment-drafts'}}
+  = turbo_frame_tag "#{@index.to_s}_table", src: async_remunerations_salary_payment_drafts_path(month: @month, year: @year, employee_finder: @employee_finder, tab: @index)
+
+  .div
+    .col-xs-6
+      %h4.hidden-xs &nbsp;
+      .btn.btn-default.btn-block.cancel-btn-fw{ data: { toggle: 'modal', target: '#confirm-clean-form-modal'}}
+        = t('views.remunerations.salary_payment_drafts.clean_form')
+    .col-xs-6{ data: { controller: 'disable' } }
+      %h4.hidden-xs &nbsp;
+      = link_to save_remuneration_salary_payment_drafts_path(**build_filter_params(tab: @index)) do
+        .btn.btn-green-cf.btn-block.hidden{ data: { action: 'click->disable#replaceWithDisableButton', 'salary-payment-drafts-target': 'disabledButton' } }
+          = t(:save)
+      .btn.btn-green-cf.btn-block{id: 'salary-payment-button' disabled: 'disabled', data: { 'disable-target': 'disabledButton', 'salary-payment-drafts-target': 'enabledButton' } }
+        = t(:save)
+
+= render partial: 'confirm_clean_form_modal', locals: { **build_filter_params(tab: @index), tab: @index.to_s }

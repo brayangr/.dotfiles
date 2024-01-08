@@ -1,0 +1,63 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/brayan/work/web/docs": "__default__profile__",
+            "file:///home/brayan/work/Serverless": "__default__profile__",
+            "file:///home/brayan/work/web": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "c50981437c55ce05903be6f9bfb8b3ece9f6f3d75309940da6e2093e6ee38d5c",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/brayan/work/web"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#303446",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#c6d0f5",
+            "background": "#303446",
+            "editorBackground": "#303446",
+            "titleBarBackground": "#232634",
+            "activityBarBackground": "#232634",
+            "sideBarBackground": "#292c3c",
+            "statusBarBackground": "#232634",
+            "statusBarNoFolderBackground": "#232634",
+            "windowBorder": "rgba(0, 0, 0, 0)"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 256,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/brayan/work/web",
+            "backupPath": "/home/brayan/.config/Code/Backups/36b89fdb5687b39bd1befdd21f4d846a",
+            "uiState": {
+                "mode": 0,
+                "x": 1280,
+                "y": 0,
+                "width": 1280,
+                "height": 708
+            }
+        },
+        "openedWindows": []
+    }
+}

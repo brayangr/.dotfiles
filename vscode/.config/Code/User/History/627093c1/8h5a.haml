@@ -1,0 +1,7 @@
+- case @tab
+- when :worked_days
+  = turbo_stream.replace("worked_days_employee_#{@employee.id}", partial: 'async/remunerations/worked_days_table_row', locals: { employee: @employee })
+- when :extra_hours
+  = turbo_stream.replace("extra_hours_employee_#{@employee.id}", partial: "async/remunerations/extra_hours_table_row", locals: { employee: @employee, columns: @columns })
+- when :licenses
+  = turbo_stream.replace("licenses_employee_#{@employee.id}", partial: 'async/remunerations/licenses_table_row', locals: { employee: @employee })

@@ -1,0 +1,38 @@
+.index_header{id: 'index_header'}
+  .div{id: 'step-one'}
+    .title-container{style: 'overflow: visible !important'}
+      .row{id: 'btn-header'}
+        .col-xs-12.col-sm-6
+          %h1
+            %span.pull-left{ class: 'no-period-bills-title' }= t('views.no_period_bills.takings')
+        .col-xs-12.col-sm-6{ id: ('step-eight' if params[:tour].present?) }
+          .box-header
+            - if can?(:index, Payment)
+              = link_to payments_path do
+                .btn.btn-default.btn-xs
+                  .icon.fa.fa-history
+                  %span #{t('views.no_period_bills.payments_history')}
+          .box-header
+            - if current_community.stp_active?
+              = link_to dispertions_payments_path do
+                .btn.btn-default.btn-xs
+                  .icon.fa.fa-list-alt
+                  %span #{t('views.no_period_bills.dispertions')}
+          .box-header
+            = link_to bills_summary_no_period_bills_path, class: 'btn btn-default btn-xs', style: "color: #333333;" do
+              = t('views.no_period_bills.bills_summary.title')
+          .box-header
+            - if can?(:irs, MxCompany) && is_invoice_ready?(current_community.country_code)
+              = link_to irs_mx_companies_path do
+                .btn.btn-default.btn-xs
+                  =I18n.t('views.bills.index.facturas')
+          .box-header
+            - if current_user.admin?
+              %button.btn.btn-xs.btn-default{ data: { toggle: 'modal', target: '#redoPasModal', action: 'NoPeriodBills#showRedoPasForAllPropertiesConfirmationModal' } }
+                = t('views.no_period_bills.redo_pas.for_all.action')
+
+    .finder
+      = render(FinderComponent.new(**@finder_params))
+    %br
+
+    = render "total_debts_card"

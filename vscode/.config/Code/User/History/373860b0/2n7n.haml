@@ -1,0 +1,95 @@
+.mainContent
+  = render(HeaderBoxComponent.new(id: 'vacation-index', title: t('views.vacations.title', employee: @employee))) do |header|
+    - header.with_buttons_section do
+      - if can?(:create, Vacation)
+        = link_to new_remuneration_vacation_path(employee_id: @employee.id) do
+          .btn.btn-green-cf.btn-xs
+            .fa.fa-plus
+            = t('views.vacations.form.new_registry')
+      = link_to remuneration_employee_path(@employee) do
+        .btn.btn-default.btn-xs
+          .fa.fa-arrow-left
+          = t('common.return')
+  .summary-container
+    .summary-content
+      .summary-title
+        = t('common.date')
+        .inline
+          .fa.fa-info-circle{ data: { toggle: :tooltip }, title: t('views.remunerations.salaries.vacations_start_date_description') }
+      .summary-amount
+        = @actual_date
+        .inline
+          .btn.btn-s.btn-default{ data: { toggle: :tooltip }, title: t('views.vacations.change_date'), onclick: 'showChangeDateModal()' }
+            .fa.fa-retweet
+    .summary-content
+      .summary-title
+        = t('views.vacations.index.taken_vacation_days')
+      .summary-amount
+        = @used_vacation_days
+    .summary-content
+      .summary-title
+        = t('views.vacations.index.vacation_days_to_take')
+      .summary-amount
+        = @unused_vacation_days
+
+  .table-responsive
+    .table-root
+      .table-header.flex-row
+        .flex-column
+        .flex-column-2= t('views.vacations.index.from')
+        .flex-column-2= t('views.vacations.index.until')
+        .flex-column= t('views.vacations.index.days')
+        .flex-column-2= t('views.vacations.index.name')
+        -# .flex-column-2= t('models.remuneration.voucher.one')
+        -# .flex-column-2= t('views.vacations.index.signed_document')
+        .flex-column-3= t('views.commons.actions')
+      - @vacations.each_with_index do |vacation, i|
+        .table-row.flex-row
+          .flex-column= i + 1
+          .flex-column-2= I18n.l vacation.start_date.to_date, format: :long
+          .flex-column-2= I18n.l vacation.end_date.to_date, format: :long
+          .flex-column= vacation.days
+          .flex-column-2.wrap-text= vacation.name
+          .flex-column-3.actions-column{ id: "actions-column-vacation-#{vacation.id}" }
+            - if vacation.voucher?
+              = link_to voucher_remuneration_vacation_path(vacation), target: '_blank' do
+                .btn.btn-s.btn-default{ data: { toggle: :tooltip }, title: t('models.remuneration.voucher.one') }
+                  .fa.fa-download
+            - if vacation.documentation?
+              = link_to documentation_remuneration_vacation_path(vacation), target: '_blank' do
+                .btn.btn-s.btn-default{ data: { toggle: :tooltip }, title: t('views.vacations.index.signed_document') }
+                  .fa.fa-file-pdf-o
+            - elsif can?(:update, vacation)
+              .btn.btn-default.btn-s.toggle_with{ hide: "#actions-column-vacation-#{vacation.id}", target: "#upload-documentation-#{vacation.id}", data: { toggle: :tooltip }, title: t('views.remunerations.salary_payments.upload_signed_voucher') }
+                .fa.fa-upload
+            - if can?(:update, vacation)
+              = link_to edit_remuneration_vacation_path(vacation) do
+                .btn.btn-s.btn-default{ data: { toggle: :tooltip }, title: t('common.edit') }
+                  .fa.fa-pencil
+            - if can?(:destroy, vacation)
+              .btn.btn-s.btn-default{ data: { toggle: :tooltip }, title: t('common.delete'), onclick: "showDestroyModal(#{vacation.id}, '#{vacation.name.dump}')" }
+                .fa.fa-trash
+          .flex-column-3{ id: "upload-documentation-#{vacation.id}", style: 'display:none' }
+            - if can?(:update, vacation)
+              = form_for vacation, url: remuneration_vacation_path(vacation), html: { class: 'form', multipart: true } do |f|
+                .col-sm-8
+                  .input-group
+                    %input.form-control.input-sm{ type: :text }
+                    %span.input-group-btn
+                      .btn-file.btn.btn-default.btn-sm
+                        = t('views.remunerations.salary_payments.index.examine')
+                        = f.file_field :documentation, required: 'required', class: 'bill_input custom-input'
+                .col-sm-4.actions-column
+                  = button_tag(type: :submit, class: 'btn btn-default btn-s', data: { toggle: :tooltip }, title: t('save')) do
+                    .fa.fa-check
+                  .btn-s.btn.btn-default.toggle_with{ target: "#actions-column-vacation-#{vacation.id}", hide: "#upload-documentation-#{vacation.id}", data: { toggle: :tooltip }, title: t('cancel') }
+                    .fa.fa-times
+
+    - if @vacations.empty?
+      %br
+      .col-xs-12.alert.alert-danger.center= t('views.commons.no_result')
+
+  = automated_paginater(@vacations)
+
+= render partial: 'remuneration/vacations/modals/change_date_modal'
+= render partial: 'remuneration/vacations/modals/confirm_remove_modal'

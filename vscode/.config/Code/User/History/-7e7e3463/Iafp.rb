@@ -1,0 +1,2 @@
+class LicenseDraft < ApplicationRecord
+end

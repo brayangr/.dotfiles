@@ -1,0 +1,141 @@
+.mainContent.panelAdmin.copropietarios
+  = render(HeaderBoxComponent.new(id: 'employees_header', title: t('views.remunerations.employees.title'))) do |box|
+    - box.with_buttons_section do
+      - if (can? :send_all_period_salary_payments, PeriodExpense) && @period_expense.id.present?
+        = link_to send_all_period_salary_payments_period_expense_path(@period_expense.id), data: { confirm: I18n.t('views.remunerations.employees.warning_send_salary_payments_mail', period_expense: @period_expense.to_s) } do
+          .btn.btn-default.btn-xs.pull-right
+            .fa.fa-envelope-o
+            = t('views.remunerations.employees.send_period_salary_payments_by_mail')
+      - if can? :index, SocialCredit
+        = link_to remuneration_social_credits_path do
+          .btn.btn-default.btn-xs.pull-right
+            .fa.fa-list
+            = t('activerecord.models.social_credit.other')
+      - if @uses_period_control
+        #btn-tutorial.btn.btn-default.btn-xs.pull-right{ data: { target: '#tutorial-modal', toggle: :modal }, type: :button }
+          .fa.fa-graduation-cap
+          = t('views.tutorial.name')
+        = render partial: '/layouts/youtube_modal', locals: { yt_video_id: t('views.tutorial.remuneration.employees.yt_video_id'), title: t('views.tutorial.name') }
+
+  .col-xs-12.content{ data: { intro: t('views.remunerations.employees.search_criteria'), position: :bottom} }
+    = form_tag remuneration_employees_path, method: :get do |f|
+      %br.visible-xs
+      .col-sm-2
+        = select_tag :month, options_for_select(select_months.map { |e| [e[:name], e[:id]] }, @month), class: 'form-control customized-select', id: 'month-select', data: { value: @month }
+      %br.visible-xs
+      .col-sm-2
+        = select_tag :year, options_for_select(select_years(false, @minimum_year).map { |e| [e[:name], e[:name]] }, @year), class: 'form-control customized-select', id: 'year-select', data: { value: @year }
+      %br.visible-xs
+      .col-sm-3
+        = text_field_tag :name, @name, placeholder: t('views.remunerations.employees.name'), class: 'form-control custom-input'
+      %br.visible-xs
+      .col-sm-2
+        = select_tag :status, options_for_select(active_status.map{ |a| [a[:name], a[:name]] }, @status), class: 'form-control region-select customized-select'
+      %br.visible-xs
+      .col-sm-3
+        = submit_tag t('views.commons.search'), class: 'btn find-btn widthFull'
+      %br.visible-xs
+
+  .clear
+    %br
+
+  .summary-container
+    .summary-content
+      .summary-title= t('views.remunerations.employees.total_cost')
+      .summary-amount= to_currency(amount: @total_cost)
+    .summary-content
+      .summary-title= t('views.remunerations.employees.liquido_amount')
+      .summary-amount= to_currency(amount: [@liquido_amount, 0].max)
+    .summary-content
+      .summary-title= t('views.remunerations.employees.salary_payments_count')
+      .summary-amount= "#{@salary_payments_count} de #{@active_employees_count} "
+    .summary-content
+      .summary-title= t('views.remunerations.employees.finiquito_amount')
+      .summary-amount= to_currency(amount: @finiquito_amount)
+
+  .clear
+    %br
+
+  .row
+    .col-xs-12
+      - if current_community.employees.exists?
+        - if @active_employees_count == @salary_payments_count
+          = link_to get_previred_remuneration_employees_path(:txt, month: @month, year: @year), id: 'link-get-previred' do
+            .btn.btn-light-blue.btn-xs.pull-right{ data: { intro: t('views.remunerations.employees.download_previred_remunerations_file'), position: :bottom } }
+              .icon.fa.fa-download
+              = t('views.remunerations.employees.button_get_previred')
+        - else
+          .btn.btn-light-blue.btn-xs.pull-right{ onclick: "showModal('#{@missing_salary_payments.first(10)}')" }
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_get_previred')
+      - if can? :book, Employee
+        %span.pull-right &nbsp;
+        =link_to book_remuneration_employees_path(month: @month, year: @year) do
+          .btn.btn-default.btn-xs.pull-right{ data: { intro: t('views.remunerations.employees.download_remunerations_book'), position: :top } }
+            .icon.fa.fa-book
+            = t('views.remunerations.employees.button_book')
+          %span.pull-right &nbsp;
+      - if can? :regenerate_service_billings, Employee
+        = link_to regenerate_service_billings_remuneration_employees_path(month: @month, year: @year) do
+          .btn.btn-red-cf.btn-xs.pull-right{ data: { intro: t('views.remunerations.employees.generate_pending_service_billings'), position: :bottom } }
+            .icon.fa.fa-refresh
+            = t('views.remunerations.employees.button_regenerate_service_billings')
+          %span.pull-right &nbsp;
+      - if can? :pdf, SalaryPayment
+        - if @period_expense.pdf_salary_payments.present?
+          = link_to (@period_expense.pdf_salary_payments.present? ? pdf_salary_payments_period_expense_path(id: @period_expense.id) : '#'), target: '_blank', id: 'btn-all-payments' do
+            .btn.btn-default.btn-xs.pull-right{ data: { intro: t('views.remunerations.employees.download_salary_payments_pdf', content: t('activerecord.models.salary_payment.other').downcase), position: :bottom} }
+              .icon.fa.fa-download
+              = t('views.remunerations.employees.button_pdf_salary_payments')
+        - else
+          .btn.btn-default.btn-xs.pull-right.disabled{ data: { intro: t('views.remunerations.employees.download_salary_payments_pdf', content: t('activerecord.models.salary_payment.other').downcase), position: :bottom} }
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_pdf_salary_payments')
+        %span.pull-right &nbsp;
+        - if @period_expense.pdf_advances.present?
+          = link_to (@period_expense.pdf_advances.present? ? pdf_advances_period_expense_path(id: @period_expense.id) : '#'), target: '_blank' do
+            .btn.btn-default.btn-xs.pull-right{ data: { intro: t('views.remunerations.employees.download_advances_pdf'), position: :bottom } }
+              .icon.fa.fa-download
+              = t('views.remunerations.employees.button_pdf_advances')
+        - else
+          .btn.btn-default.btn-xs.pull-right.disabled{ data: { intro: t('views.remunerations.employees.download_advances_pdf'), position: :bottom} }
+            .icon.fa.fa-download
+            = t('views.remunerations.employees.button_pdf_advances')
+        %span.pull-right &nbsp;
+        - if can? :statutory_declaration, Employee
+          = link_to statutory_declaration_remuneration_employees_path do
+            .btn.btn-default.btn-xs.pull-right
+              .icon.fa.fa-download
+              = t('views.remunerations.employees.button_statutory_declaration')
+        - if current_community.get_setting_value('lre_enabled') == 1
+          = render partial: 'lre_behavior'
+
+  - if @active_employees_count != @salary_payments_count
+    = render partial: 'remuneration/employees/modals/missing_salary_payments'
+  .clear
+    %br
+  - unless @status == 'Inactivo'
+    .title-container
+      .col-sm-4
+        %h1.title
+          %span{ data: { intro: t('views.remunerations.employees.main_title_tooltip'), position: :bottom } }
+            = t('views.remunerations.employees.current_employees')
+      - if can? :create, Employee
+        .col-sm-8
+          = link_to new_remuneration_employee_path do
+            .btn.btn-default.btn-xs.pull-right{ data: { intro: 'views.remunerations.employees.new_employee_tooltip', position: :bottom } }
+              .icon.fa.fa-plus
+              = t('views.remunerations.employees.new_employee')
+
+
+
+    = render partial: 'profile', locals: { list_employees: @active_employees }
+    = pagy_bootstrap_nav(@pagy_properties_active).html_safe
+  %br
+  - if !(@status == 'Activo') && @inactive_employees.present?
+    .title-container
+      .col-sm-4
+        %h1
+          = t('views.remunerations.employees.past_employees')
+    = render partial: 'profile', locals: { list_employees: @inactive_employees }
+    = pagy_bootstrap_nav(@pagy_properties_inactive).html_safe

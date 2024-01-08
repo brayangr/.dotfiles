@@ -1,0 +1,14 @@
+.mainContent
+  = render(HeaderBoxComponent.new(id: 'salary-payment-drafts', title: t('views.remunerations.salary_payment_drafts.title'))) do |header|
+    - header.with_buttons_section do
+      = link_to remuneration_employees_path do
+        .btn.btn-default.btn-xs
+          .fa.fa-arrow-left
+          = t('views.commons.back')
+  .row
+    .col-xs-12
+      .col-xs-12.col-sm-6{style: 'padding-left: 0px;'}
+        = render(DisplayTabsComponent.new(tabs: @tabs))
+    .col-xs-12.col-sm-6{style: 'padding-right: 0px;'}
+
+  = render(FinderComponent.new(**@component_attributes))
