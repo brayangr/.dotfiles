@@ -1,9 +1,0 @@
-2024-01-03 16:54:41.260 [info] update#setState idle
-2024-01-03 16:55:11.262 [info] update#setState checking for updates
-2024-01-03 16:55:12.074 [info] update#setState idle
-2024-01-03 17:55:11.265 [info] update#setState checking for updates
-2024-01-03 17:55:12.313 [info] update#setState idle
-2024-01-03 18:29:11.994 [error] [UtilityProcess type: shared-process, pid: 82165]: crashed with code 15 and reason 'killed'
-2024-01-03 18:29:12.054 [error] ptyHost terminated unexpectedly with code 0
-2024-01-03 18:29:12.082 [info] Extension host with pid 82133 exited with code: 15, signal: unknown.
-2024-01-03 18:29:12.082 [error] [UtilityProcess id: 1, type: extensionHost, pid: 82133]: crashed with code 15 and reason 'killed'
