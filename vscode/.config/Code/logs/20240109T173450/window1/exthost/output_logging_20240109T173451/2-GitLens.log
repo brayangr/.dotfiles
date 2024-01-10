@@ -1,2 +1,0 @@
-GitLens v14.6.1 activating in Visual Studio Code (1.85.1) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (c50981437c55ce05903be6f9bfb8b3ece9f6f3d75309940da6e2093e6ee38d5c|4899105c-2956-4ef7-b0ae-205418ee9c651704832490802)
-To enable debug logging, set `"gitlens.outputLevel: "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette[2024-01-09 20:35:04.315] [GIT  ] [/home/brayan/work/web] git blame --root --incremental -- app/models/community.rb [*551ms] (slow)

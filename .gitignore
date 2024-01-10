@@ -4,3 +4,4 @@ vscode/.config/Code/User*
 vscode/.config/Code/Cache*
 vscode/.config/Code/Crashpad
 vscode/.config/Code/Service\ Worker
+vscode/.config/Code/logs
