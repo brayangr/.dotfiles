@@ -1,7 +1,1 @@
-vscode/.config/Code/Backups
-vscode/.config/Code/blob_storage
-vscode/.config/Code/User*
-vscode/.config/Code/Cache*
-vscode/.config/Code/Crashpad
-vscode/.config/Code/Service\ Worker
-vscode/.config/Code/logs
+vscode/.config/Code

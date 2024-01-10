@@ -1,3 +1,0 @@
-web: rails s
-web-front: ./bin/webpack-dev-server
-jobs: rake jobs:work

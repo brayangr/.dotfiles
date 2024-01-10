@@ -1,8 +1,0 @@
-.flex-column
-  = render(CfSelectorComponent.new(variable_name: "#{discount_form.object_name}[reason]", options: reasons_options, filter: true))
-.flex-column
-  = discount_form.number_field :days, class: 'form-control input-sm', min: 0, data: { action: 'focusout->remunerations--salary-payment-drafts--discounts-days-form#submit input->salary-payment-drafts#enableSubmit', 'remunerations--salary-payment-drafts--discounts-days-form-target': 'daysInput' }
-.flex-column
-  = render(DateSelectorComponent.new(variable_name: "#{discount_form.object_name}[start_date]", default_value: discount.start_date, class: 'input-sm', optional: true, placeholder:  t('views.remunerations.salary_payment_drafts.licenses.place_holders.start'), data: { 'remunerations--salary-payment-drafts--discounts-days-form-target': 'startDateInput', action: 'focusout->remunerations--salary-payment-drafts--discounts-days-form#submit input->salary-payment-drafts#enableSubmit change->remunerations--salary-payment-drafts--discounts-days-form#submit' }))
-.flex-column
-  = render(DateSelectorComponent.new(variable_name: "#{discount_form.object_name}[end_date]", default_value: discount.end_date, class: 'input-sm', optional: true, placeholder:  t('views.remunerations.salary_payment_drafts.licenses.place_holders.end'), data: { 'remunerations--salary-payment-drafts--discounts-days-form-target': 'endDateInput', action: 'focusout->remunerations--salary-payment-drafts--licenses-form#submit input->salary-payment-drafts#enableSubmit change->remunerations--salary-payment-drafts--discounts-days-form#submit' }))

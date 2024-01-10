@@ -1,8 +1,0 @@
-.content
-  %img{alt: 'documents_icon', src: t('mailers.shared.imgs.documents_icon')}/
-  %p.headline-5
-    = t('mailers.shared.hello', recipient_name: @recipient_first_name)
-  %p.paragraph.margin-bottom-52
-    = @intro.html_safe
-
-  = render partial: 'user_mailer/partials/end_mail'

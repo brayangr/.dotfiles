@@ -1,2 +1,0 @@
-web: rails c
-web-front: ./bin/webpack-dev-server

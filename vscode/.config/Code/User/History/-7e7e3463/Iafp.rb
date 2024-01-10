@@ -1,2 +1,0 @@
-class LicenseDraft < ApplicationRecord
-end
