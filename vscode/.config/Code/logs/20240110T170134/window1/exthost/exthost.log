@@ -41,3 +41,7 @@
 2024-01-10 17:06:54.799 [warning] TextEditor is closed/disposed
 2024-01-10 17:07:08.730 [warning] TextEditor is closed/disposed
 2024-01-10 17:09:19.064 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1011
+2024-01-10 17:09:24.097 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1011
+2024-01-10 17:09:29.133 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1011
+2024-01-10 17:09:34.160 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1011
+2024-01-10 17:10:34.906 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
