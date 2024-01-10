@@ -1,1 +1,3 @@
-vscode/.config/Code
+vscode/.config/Code/**
+!vscode/.config/Code/User/
+!vscode/.config/Code/User/settings.json
