@@ -1,0 +1,93 @@
+2024-01-10 09:02:54.669 [info] Extension host with pid 4032 started
+2024-01-10 09:02:54.669 [info] Skipping acquiring lock for /home/brayan/.config/Code/User/workspaceStorage/3e5e6d6f7e9976681a79a6f5de822ba8.
+2024-01-10 09:02:54.831 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-01-10 09:02:54.839 [info] ExtensionService#_doActivateExtension Shopify.ruby-lsp, startup: false, activationEvent: 'onLanguage:ruby'
+2024-01-10 09:02:55.760 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-01-10 09:02:55.763 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: true, activationEvent: '*'
+2024-01-10 09:02:55.784 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2024-01-10 09:02:55.839 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-01-10 09:02:55.863 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-01-10 09:02:56.083 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2024-01-10 09:03:04.508 [info] Eager extensions activated
+2024-01-10 09:03:04.515 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-01-10 09:03:04.517 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-01-10 09:03:04.524 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2024-01-10 09:03:04.527 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2024-01-10 09:03:04.565 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2024-01-10 09:03:04.834 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-01-10 09:03:04.863 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-01-10 09:05:13.859 [warning] TextEditor is closed/disposed
+2024-01-10 09:06:02.431 [warning] TextEditor is closed/disposed
+2024-01-10 09:07:49.142 [warning] TextEditor is closed/disposed
+2024-01-10 09:08:14.943 [warning] TextEditor is closed/disposed
+2024-01-10 09:08:35.702 [warning] TextEditor is closed/disposed
+2024-01-10 09:09:16.021 [warning] TextEditor is closed/disposed
+2024-01-10 09:09:16.090 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.090 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:16.091 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:5,$model12)
+2024-01-10 09:09:18.951 [warning] TextEditor is closed/disposed
+2024-01-10 09:09:38.686 [warning] TextEditor is closed/disposed
+2024-01-10 09:10:37.075 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.075 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.075 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:10:37.076 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model19)
+2024-01-10 09:14:49.630 [warning] TextEditor is closed/disposed
+2024-01-10 09:18:17.009 [warning] TextEditor is closed/disposed
+2024-01-10 09:18:38.970 [warning] TextEditor is closed/disposed
+2024-01-10 09:19:46.348 [warning] TextEditor is closed/disposed
+2024-01-10 09:20:05.195 [warning] TextEditor is closed/disposed
+2024-01-10 09:20:33.433 [warning] TextEditor is closed/disposed
+2024-01-10 09:21:19.193 [warning] TextEditor is closed/disposed
+2024-01-10 09:23:41.773 [warning] TextEditor is closed/disposed
+2024-01-10 09:23:46.381 [warning] TextEditor is closed/disposed
+2024-01-10 09:23:49.445 [warning] TextEditor is closed/disposed
+2024-01-10 09:23:52.864 [warning] TextEditor is closed/disposed
+2024-01-10 09:23:57.016 [warning] TextEditor is closed/disposed
+2024-01-10 09:24:03.442 [warning] TextEditor is closed/disposed
+2024-01-10 09:24:07.140 [warning] TextEditor is closed/disposed
+2024-01-10 09:24:15.927 [warning] TextEditor is closed/disposed
+2024-01-10 09:24:17.069 [warning] TextEditor is closed/disposed
+2024-01-10 09:24:17.876 [warning] TextEditor is closed/disposed
+2024-01-10 09:26:38.194 [warning] TextEditor is closed/disposed
+2024-01-10 09:26:41.375 [warning] TextEditor is closed/disposed
+2024-01-10 09:26:44.402 [warning] TextEditor is closed/disposed
+2024-01-10 09:26:55.740 [warning] TextEditor is closed/disposed
+2024-01-10 09:26:56.240 [warning] TextEditor is closed/disposed
+2024-01-10 09:31:25.344 [warning] TextEditor is closed/disposed
+2024-01-10 09:32:32.215 [warning] TextEditor is closed/disposed
+2024-01-10 09:34:53.153 [warning] TextEditor is closed/disposed
+2024-01-10 09:34:57.150 [warning] TextEditor is closed/disposed
+2024-01-10 09:35:23.236 [warning] TextEditor is closed/disposed
+2024-01-10 09:35:24.379 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:7,$model51)
+2024-01-10 09:40:57.088 [warning] TextEditor is closed/disposed
+2024-01-10 09:41:19.848 [warning] TextEditor is closed/disposed
+2024-01-10 09:41:32.890 [warning] TextEditor is closed/disposed
+2024-01-10 09:42:19.662 [warning] TextEditor is closed/disposed
+2024-01-10 10:03:47.012 [warning] TextEditor is closed/disposed
+2024-01-10 10:04:04.189 [warning] TextEditor is closed/disposed
+2024-01-10 10:04:15.206 [warning] TextEditor is closed/disposed
+2024-01-10 10:04:34.409 [warning] TextEditor is closed/disposed
+2024-01-10 10:08:39.572 [warning] TextEditor is closed/disposed
+2024-01-10 10:09:53.859 [warning] TextEditor is closed/disposed
+2024-01-10 10:59:06.167 [warning] TextEditor is closed/disposed
+2024-01-10 12:20:09.601 [warning] TextEditor is closed/disposed
+2024-01-10 12:20:11.729 [warning] TextEditor is closed/disposed
+2024-01-10 12:21:09.377 [warning] TextEditor is closed/disposed

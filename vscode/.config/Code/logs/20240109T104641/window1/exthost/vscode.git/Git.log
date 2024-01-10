@@ -1,0 +1,14 @@
+2024-01-09 10:46:42.814 [info] Log level: Info
+2024-01-09 10:46:42.814 [info] Validating found git in: "git"
+2024-01-09 10:46:42.814 [info] Using git "2.34.1" from "git"
+2024-01-09 10:46:42.814 [info] > git rev-parse --show-toplevel [17ms]
+2024-01-09 10:46:42.814 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2024-01-09 10:46:42.814 [info] Open repository: /home/brayan/Downloads/desafios
+2024-01-09 10:46:42.814 [info] > git config --get commit.template [5ms]
+2024-01-09 10:46:42.816 [info] > git rev-parse --show-toplevel [112ms]
+2024-01-09 10:46:42.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/challenge1 refs/remotes/challenge1 [35ms]
+2024-01-09 10:46:43.003 [info] > git status -z -uall [7ms]
+2024-01-09 10:46:43.025 [info] > git config --get commit.template [12ms]
+2024-01-09 10:46:43.059 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/challenge1 refs/remotes/challenge1 [35ms]
+2024-01-09 10:46:43.078 [info] > git status -z -uall [12ms]
+2024-01-09 10:46:43.239 [info] > git check-ignore -v -z --stdin [4ms]

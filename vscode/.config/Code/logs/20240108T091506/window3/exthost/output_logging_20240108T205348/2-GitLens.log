@@ -1,0 +1,5 @@
+GitLens v14.6.1 activating in Visual Studio Code (1.85.1) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (c50981437c55ce05903be6f9bfb8b3ece9f6f3d75309940da6e2093e6ee38d5c|2ad56cae-a2eb-4ec8-8868-cc0bd45d9ca61704758027544)
+To enable debug logging, set `"gitlens.outputLevel: "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette[2024-01-08 23:54:00.419] v.e
+EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/brayan/work/web/app/builders/salary_payments/full_time_builder.rb'[2024-01-08 23:54:01.374] v.e
+EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/brayan/work/web/app/builders/salary_payments/full_time_builder.rb'[2024-01-09 00:41:01.325] v.e
+EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/brayan/work/web/app/builders/salary_payments/full_time_builder.rb'

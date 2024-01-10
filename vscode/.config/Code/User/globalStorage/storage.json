@@ -3,8 +3,11 @@
     "profileAssociations": {
         "workspaces": {
             "file:///home/brayan/work/web/docs": "__default__profile__",
+            "file:///home/brayan/Downloads/desafios": "__default__profile__",
+            "file:///home/brayan/personal/toty/Desafios": "__default__profile__",
             "file:///home/brayan/work/Serverless": "__default__profile__",
-            "file:///home/brayan/work/web": "__default__profile__"
+            "file:///home/brayan/work/web": "__default__profile__",
+            "file:///home/brayan/.dotfiles": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -15,7 +18,7 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/brayan/work/web"
+                "folderUri": "file:///home/brayan/.dotfiles"
             }
         ],
         "emptyWindows": []
@@ -48,14 +51,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/brayan/work/web",
-            "backupPath": "/home/brayan/.config/Code/Backups/36b89fdb5687b39bd1befdd21f4d846a",
+            "folder": "file:///home/brayan/.dotfiles",
+            "backupPath": "/home/brayan/.config/Code/Backups/32368efcfa6732ccd1d0519cec02db49",
             "uiState": {
                 "mode": 0,
-                "x": 1280,
-                "y": 0,
-                "width": 1280,
-                "height": 708
+                "x": 768,
+                "y": 336,
+                "width": 1024,
+                "height": 768
             }
         },
         "openedWindows": []

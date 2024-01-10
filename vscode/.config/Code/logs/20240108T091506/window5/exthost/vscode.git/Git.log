@@ -1,0 +1,22 @@
+2024-01-08 23:23:03.825 [info] Log level: Info
+2024-01-08 23:23:03.825 [info] Validating found git in: "git"
+2024-01-08 23:23:03.825 [info] Using git "2.34.1" from "git"
+2024-01-08 23:23:03.825 [info] > git rev-parse --show-toplevel [5ms]
+2024-01-08 23:23:03.825 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-01-08 23:23:03.831 [info] Open repository: /home/brayan/personal/toty/Desafios
+2024-01-08 23:23:03.845 [info] > git rev-parse --show-toplevel [7ms]
+2024-01-08 23:23:03.847 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/challenge1 refs/remotes/challenge1 [4ms]
+2024-01-08 23:23:03.854 [warning] ENOENT: no such file or directory, open '/home/brayan/personal/toty/Desafios/.git/refs/remotes/origin/challenge1'
+2024-01-08 23:23:03.855 [info] > git rev-parse refs/remotes/origin/challenge1 [1ms]
+2024-01-08 23:23:03.863 [info] > git status -z -uall [1ms]
+2024-01-08 23:23:03.885 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/challenge1 refs/remotes/challenge1 [10ms]
+2024-01-08 23:23:03.894 [warning] ENOENT: no such file or directory, open '/home/brayan/personal/toty/Desafios/.git/refs/remotes/origin/challenge1'
+2024-01-08 23:23:03.896 [info] > git rev-parse refs/remotes/origin/challenge1 [2ms]
+2024-01-08 23:23:03.906 [info] > git status -z -uall [2ms]
+2024-01-08 23:23:04.004 [info] > git merge-base refs/heads/challenge1 refs/remotes/origin/challenge1 [23ms]
+2024-01-08 23:23:04.018 [info] > git rev-list --count --left-right refs/heads/challenge1...refs/remotes/origin/challenge1 [8ms]
+2024-01-08 23:23:04.544 [info] > git check-ignore -v -z --stdin [1ms]
+2024-01-08 23:40:22.830 [info] > git for-each-ref --format %(refname) %(objectname) %(*objectname) refs/tags [7ms]
+2024-01-08 23:40:22.832 [info] > git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z c1e0caf6766d495bc67c491b6f7578134c79fd82 [2ms]
+2024-01-08 23:40:22.841 [info] > git status -z -uall [3ms]
+2024-01-08 23:40:23.518 [info] > git check-ignore -v -z --stdin [1ms]
