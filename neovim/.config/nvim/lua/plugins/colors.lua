@@ -1,10 +1,10 @@
 return {
-	"catppuccin/nvim", name = "catppuccin", priority = 1000,
+	"Shatur/neovim-ayu", name = "ayu", priority = 1000,
 
 	config = function()
-		require('catppuccin').setup {
-			flavour = 'frappe'
+		require('ayu').setup {
+			mirage = true
 		}
-		vim.cmd('colorscheme catppuccin')
+		vim.cmd('colorscheme ayu')
 	end
 }
